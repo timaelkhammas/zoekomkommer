@@ -19,3 +19,28 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Alt", name: "alt", widget: "string", required: false }
               - { label: "Caption", name: "caption", widget: "text", required: false }
+
+  - name: "cv"
+    label: "CV"
+    files:
+      - label: "CV Content"
+        name: "cv"
+        file: "content/cv.yml"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Line", name: "line", widget: "string" }
