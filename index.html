@@ -337,73 +337,21 @@
   </main>
 
   <aside id="cvOverlay" class="overlay" aria-hidden="true">
-    <div class="overlay-inner">
+  <div class="overlay-inner">
 
-      <button class="overlay-close" id="closeCv" type="button" aria-label="Close">close</button>
+    <button class="overlay-close" id="closeCv" type="button" aria-label="Close">close</button>
 
-      <div class="cv-top">
-        <div class="site-title">Zoé Komkommer</div>
+    <div class="cv-top">
+      <div class="site-title" id="cvName"></div>
 
-        <div class="cv-block cv-contact">
-          <ul class="cv-list">
-            <li><span class="contact-label">email</span>: <a href="mailto:zoekomkommer@hotmail.com">zoekomkommer@hotmail.com</a></li>
-            <li><span class="contact-label">phone</span>: +324 89 31 69 60</li>
-            <li><span class="contact-label">insta</span>: @zoekomkommer</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="cv-grid">
-
-        <div class="cv-label">Group exhibitions</div>
-        <div class="cv-block">
-          <ul class="cv-list">
-            <li>2025 Onboards Biënnale, Antwerp, BE</li>
-            <li>2025 The Art Buffet, Zuiderpershuis, Antwerp, BE</li>
-            <li>2024 Pop-up nr.63, Ghent, BE</li>
-            <li>2023 Graduation Show, Ghent, BE</li>
-            <li>2023 <em>Instapklaar</em>, Ghent, BE</li>
-            <li>2022 Graduation Show, Convent Art Space, Ghent, BE</li>
-            <li>2022 <em>Notspot Kunstroute</em>, Antwerp, BE</li>
-            <li>2021 <em>Ondersporen</em>, Cultuurcentrum Hasselt, Hasselt BE</li>
-            <li>2021 <em>Een nabije toekomst</em>, De Markten, Brussels BE</li>
-            <li>2020 Graduation Show, Le Tri Postal, Brussels BE</li>
-            <li>2019 <em>Mid 20’s Pretend They Got It</em>, Vent Space, Tallinn EST</li>
-            <li>2019 <em>BXL makers</em>, Galerie Ravenstein, Brussels BE</li>
-          </ul>
-        </div>
-
-        <div class="cv-label">Publications</div>
-        <div class="cv-block">
-          <ul class="cv-list">
-            <li>2024 <em>Sounds on Grief</em></li>
-            <li>2024 House artist of B’rock Orchestra</li>
-            <li>2023 Self Published Photobook <em>Dat wij er waren</em></li>
-            <li>2022 Stamp for Belgium <em>Young People Make the Future</em></li>
-            <li>2022 Feeling Wonen 223 <em>Jonge makers</em></li>
-            <li>2022 Poetry collection <em>Zo Dun als Liefde</em></li>
-            <li>2022 Knack Weekend <em>De nieuwe Generatie</em></li>
-            <li>2021 Catalog from the exhibition <em>Ondersporen</em></li>
-            <li>2021 Lite on n°13</li>
-            <li>2020 Source: No-Signal Issue 1</li>
-            <li>2020 Graduation Show Poster Narafi</li>
-            <li>2020 Graduation Posters Luca School of Arts</li>
-            <li>2020 Self Published Postcards</li>
-            <li>2019 Lite on n°11</li>
-          </ul>
-        </div>
-
-        <div class="cv-label">Education</div>
-        <div class="cv-block">
-          <ul class="cv-list">
-            <li>2020 - 2023 Academic Master in Visual Arts, Sint Lucas Ghent, Belgium</li>
-            <li>2019 International exchange, EKA Tallinn, Estonia</li>
-            <li>2017 - 2020 Professional Bachelor in Photography, Narafi Brussels, Belgium</li>
-          </ul>
-        </div>
+      <div class="cv-block cv-contact">
+        <ul class="cv-list" id="cvContact"></ul>
       </div>
     </div>
-  </aside>
+
+    <div class="cv-grid" id="cvGrid"></div>
+  </div>
+</aside>
 
   <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
   <script>
