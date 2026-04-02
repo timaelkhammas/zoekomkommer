@@ -1,41 +1,45 @@
-name: Zoé Komkommer
+name: "Zoé Komkommer"
+
 contact:
-  email: zoekomkommer@hotmail.com
-  phone: +324 89 31 69 60
-  instagram: '@zoekomkommer'
+  email: "zoekomkommer@hotmail.com"
+  phone: "+324 89 31 69 60"
+  instagram: "@zoekomkommer"
+
 sections:
-- title: Group exhibitions
-  items:
-  - 2025 Onboards Biënnale, Antwerp, BE
-  - 2025 The Art Buffet, Zuiderpershuis, Antwerp, BE
-  - 2024 Pop-up nr.63, Ghent, BE
-  - 2023 Graduation Show, Ghent, BE
-  - 2023 <em>Instapklaar</em>, Ghent, BE
-  - 2022 Graduation Show, Convent Art Space, Ghent, BE
-  - 2022 <em>Notspot Kunstroute</em>, Antwerp, BE
-  - 2021 <em>Ondersporen</em>, Cultuurcentrum Hasselt, Hasselt BE
-  - 2021 <em>Een nabije toekomst</em>, De Markten, Brussels BE
-  - 2020 Graduation Show, Le Tri Postal, Brussels BE
-  - 2019 <em>Mid 20’s Pretend They Got It</em>, Vent Space, Tallinn EST
-  - 2019 <em>BXL makers</em>, Galerie Ravenstein, Brussels BE
-- title: Publications
-  items:
-  - 2024 <em>Sounds on Grief</em>
-  - 2024 House artist of B’rock Orchestra
-  - 2023 Self Published Photobook <em>Dat wij er waren</em>
-  - 2022 Stamp for Belgium <em>Young People Make the Future</em>
-  - 2022 Feeling Wonen 223 <em>Jonge makers</em>
-  - 2022 Poetry collection <em>Zo Dun als Liefde</em>
-  - 2022 Knack Weekend <em>De nieuwe Generatie</em>
-  - 2021 Catalog from the exhibition <em>Ondersporen</em>
-  - 2021 Lite on n°13
-  - '2020 Source: No-Signal Issue 1'
-  - 2020 Graduation Show Poster Narafi
-  - 2020 Graduation Posters Luca School of Arts
-  - 2020 Self Published Postcards
-  - 2019 Lite on n°11
-- title: Education
-  items:
-  - 2020 - 2023 Academic Master in Visual Arts, Sint Lucas Ghent, Belgium
-  - 2019 International exchange, EKA Tallinn, Estonia
-  - 2017 - 2020 Professional Bachelor in Photography, Narafi Brussels, Belgium
+  - title: "Group exhibitions"
+    items:
+      - "2025 Onboards Biënnale, Antwerp, BE"
+      - "2025 The Art Buffet, Zuiderpershuis, Antwerp, BE"
+      - "2024 Pop-up nr.63, Ghent, BE"
+      - "2023 Graduation Show, Ghent, BE"
+      - "2023 <em>Instapklaar</em>, Ghent, BE"
+      - "2022 Graduation Show, Convent Art Space, Ghent, BE"
+      - "2022 <em>Notspot Kunstroute</em>, Antwerp, BE"
+      - "2021 <em>Ondersporen</em>, Cultuurcentrum Hasselt, Hasselt BE"
+      - "2021 <em>Een nabije toekomst</em>, De Markten, Brussels BE"
+      - "2020 Graduation Show, Le Tri Postal, Brussels BE"
+      - "2019 <em>Mid 20’s Pretend They Got It</em>, Vent Space, Tallinn EST"
+      - "2019 <em>BXL makers</em>, Galerie Ravenstein, Brussels BE"
+
+  - title: "Publications"
+    items:
+      - "2024 <em>Sounds on Grief</em>"
+      - "2024 House artist of B’rock Orchestra"
+      - "2023 Self Published Photobook <em>Dat wij er waren</em>"
+      - "2022 Stamp for Belgium <em>Young People Make the Future</em>"
+      - "2022 Feeling Wonen 223 <em>Jonge makers</em>"
+      - "2022 Poetry collection <em>Zo Dun als Liefde</em>"
+      - "2022 Knack Weekend <em>De nieuwe Generatie</em>"
+      - "2021 Catalog from the exhibition <em>Ondersporen</em>"
+      - "2021 Lite on n°13"
+      - "2020 Source: No-Signal Issue 1"
+      - "2020 Graduation Show Poster Narafi"
+      - "2020 Graduation Posters Luca School of Arts"
+      - "2020 Self Published Postcards"
+      - "2019 Lite on n°11"
+
+  - title: "Education"
+    items:
+      - "2020 - 2023 Academic Master in Visual Arts, Sint Lucas Ghent, Belgium"
+      - "2019 International exchange, EKA Tallinn, Estonia"
+      - "2017 - 2020 Professional Bachelor in Photography, Narafi Brussels, Belgium"
