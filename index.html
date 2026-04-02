@@ -353,66 +353,30 @@
   </div>
 </aside>
 
-  <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
-  <script>
-async function loadGallery() {
-  const res = await fetch('/content/gallery.yml');
-  const text = await res.text();
-  const data = jsyaml.load(text);
+<script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
 
-  const items = data.items || [];
-  const gallery = document.getElementById("gallery");
-  gallery.innerHTML = "";
+<script>
+  async function loadGallery() {
+    const res = await fetch('/content/gallery.yml');
+    const text = await res.text();
+    const data = jsyaml.load(text);
 
-  function shuffle(arr){
-    const a = arr.slice();
-    for (let i = a.length - 1; i > 0; i--){
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
+    const items = data.items || [];
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = "";
 
-  const shuffled = shuffle(items);
-
-  shuffled.forEach(({ image, alt, caption }, i) => {
-    const fig = document.createElement("figure");
-    const frame = document.createElement("div");
-    frame.className = "frame";
-
-    const img = document.createElement("img");
-    img.loading = i < 2 ? "eager" : "lazy";
-    img.decoding = "async";
-    img.fetchPriority = i < 2 ? "high" : "low";
-    img.src = image;
-    img.alt = alt || "";
-
-    const cap = document.createElement("figcaption");
-    cap.innerHTML = caption || "";
-
-    frame.appendChild(img);
-    fig.appendChild(frame);
-    fig.appendChild(cap);
-    gallery.appendChild(fig);
-  });
-}
-
-  
-
-
-    function shuffle(arr){
+    function shuffle(arr) {
       const a = arr.slice();
-      for (let i = a.length - 1; i > 0; i--){
+      for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
       }
       return a;
     }
 
-    const gallery = document.getElementById("gallery");
-
     const shuffled = shuffle(items);
-    shuffled.forEach(({src, alt, caption}, i) => {
+
+    shuffled.forEach(({ image, alt, caption }, i) => {
       const fig = document.createElement("figure");
       const frame = document.createElement("div");
       frame.className = "frame";
@@ -421,101 +385,149 @@ async function loadGallery() {
       img.loading = i < 2 ? "eager" : "lazy";
       img.decoding = "async";
       img.fetchPriority = i < 2 ? "high" : "low";
-      img.src = src;
-      img.alt = alt;
+      img.src = image;
+      img.alt = alt || "";
 
       const cap = document.createElement("figcaption");
-      cap.innerHTML = caption;
+      cap.innerHTML = caption || "";
 
       frame.appendChild(img);
       fig.appendChild(frame);
       fig.appendChild(cap);
       gallery.appendChild(fig);
     });
-
-    function enableClickScroll(el){
-  const mq = window.matchMedia("(min-width: 901px)");
-  const step = () => Math.round(window.innerWidth * 0.9);
-
-  // 👉 allow trackpad / mouse wheel to scroll horizontally
-  el.addEventListener("wheel", (e) => {
-    if (!mq.matches) return;
-
-    // if horizontal scroll exists, use it
-    const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-
-    el.scrollLeft += delta;
-    e.preventDefault();
-  }, { passive:false });
-
-  let rafId = null;
-
-  function animateScrollTo(targetLeft, duration = 240){
-    if (rafId) cancelAnimationFrame(rafId);
-
-    const startLeft = el.scrollLeft;
-    const maxLeft = el.scrollWidth - el.clientWidth;
-    const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
-    const delta = clampedTarget - startLeft;
-
-    if (Math.abs(delta) < 1) return;
-
-    const start = performance.now();
-    const ease = (t) => 1 - Math.pow(1 - t, 3);
-
-    function tick(now){
-      const t = Math.min(1, (now - start) / duration);
-      el.scrollLeft = startLeft + delta * ease(t);
-      if (t < 1) rafId = requestAnimationFrame(tick);
-      else rafId = null;
-    }
-
-    rafId = requestAnimationFrame(tick);
   }
 
-  // keep your click behavior
-  el.addEventListener("click", (e) => {
-    if (!mq.matches) return;
-    if (document.getElementById("cvOverlay").classList.contains("is-open")) return;
+  async function loadCv() {
+    const res = await fetch('/content/cv.yml');
+    const text = await res.text();
+    const data = jsyaml.load(text);
 
-    const rect = el.getBoundingClientRect();
-    const forward = (e.clientX - rect.left) > rect.width / 2;
+    document.getElementById('cvName').textContent = data.name || '';
 
-    const target = el.scrollLeft + (forward ? step() : -step());
-    animateScrollTo(target, 240);
-  });
-}
-    enableClickScroll(gallery);
+    const contact = document.getElementById('cvContact');
+    contact.innerHTML = `
+      <li><span class="contact-label">email</span>: <a href="mailto:${data.contact?.email || ''}">${data.contact?.email || ''}</a></li>
+      <li><span class="contact-label">phone</span>: ${data.contact?.phone || ''}</li>
+      <li><span class="contact-label">insta</span>: ${data.contact?.instagram || ''}</li>
+    `;
 
-    const openCv = document.getElementById("openCv");
-    const overlay = document.getElementById("cvOverlay");
-    const closeCv = document.getElementById("closeCv");
+    const grid = document.getElementById('cvGrid');
+    grid.innerHTML = '';
 
-    function setOverlay(open){
-      overlay.classList.toggle("is-open", open);
-      overlay.setAttribute("aria-hidden", open ? "false" : "true");
-      openCv.setAttribute("aria-expanded", open ? "true" : "false");
+    (data.sections || []).forEach(section => {
+      const label = document.createElement('div');
+      label.className = 'cv-label';
+      label.textContent = section.title || '';
 
-      document.body.style.overflow = open ? "hidden" : "";
-      if (open) closeCv.focus();
-      else openCv.focus();
+      const block = document.createElement('div');
+      block.className = 'cv-block';
+
+      const ul = document.createElement('ul');
+      ul.className = 'cv-list';
+
+      (section.items || []).forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = item;
+        ul.appendChild(li);
+      });
+
+      block.appendChild(ul);
+      grid.appendChild(label);
+      grid.appendChild(block);
+    });
+  }
+
+  function enableClickScroll(el) {
+    const mq = window.matchMedia("(min-width: 901px)");
+    const step = () => Math.round(window.innerWidth * 0.9);
+
+    el.addEventListener("wheel", (e) => {
+      if (!mq.matches) return;
+
+      const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+      el.scrollLeft += delta;
+      e.preventDefault();
+    }, { passive: false });
+
+    let rafId = null;
+
+    function animateScrollTo(targetLeft, duration = 240) {
+      if (rafId) cancelAnimationFrame(rafId);
+
+      const startLeft = el.scrollLeft;
+      const maxLeft = el.scrollWidth - el.clientWidth;
+      const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
+      const delta = clampedTarget - startLeft;
+
+      if (Math.abs(delta) < 1) return;
+
+      const start = performance.now();
+      const ease = (t) => 1 - Math.pow(1 - t, 3);
+
+      function tick(now) {
+        const t = Math.min(1, (now - start) / duration);
+        el.scrollLeft = startLeft + delta * ease(t);
+        if (t < 1) {
+          rafId = requestAnimationFrame(tick);
+        } else {
+          rafId = null;
+        }
+      }
+
+      rafId = requestAnimationFrame(tick);
     }
 
-    openCv.addEventListener("click", () => setOverlay(true));
-    openCv.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " "){
-        e.preventDefault();
-        setOverlay(true);
-      }
-    });
+    el.addEventListener("click", (e) => {
+      if (!mq.matches) return;
+      if (document.getElementById("cvOverlay").classList.contains("is-open")) return;
 
-    closeCv.addEventListener("click", () => setOverlay(false));
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && overlay.classList.contains("is-open")) setOverlay(false);
-    });
-  </script>
+      const rect = el.getBoundingClientRect();
+      const forward = (e.clientX - rect.left) > rect.width / 2;
 
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      const target = el.scrollLeft + (forward ? step() : -step());
+      animateScrollTo(target, 240);
+    });
+  }
+
+  const openCv = document.getElementById("openCv");
+  const overlay = document.getElementById("cvOverlay");
+  const closeCv = document.getElementById("closeCv");
+
+  function setOverlay(open) {
+    overlay.classList.toggle("is-open", open);
+    overlay.setAttribute("aria-hidden", open ? "false" : "true");
+    openCv.setAttribute("aria-expanded", open ? "true" : "false");
+
+    document.body.style.overflow = open ? "hidden" : "";
+    if (open) {
+      closeCv.focus();
+    } else {
+      openCv.focus();
+    }
+  }
+
+  openCv.addEventListener("click", () => setOverlay(true));
+  openCv.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      setOverlay(true);
+    }
+  });
+
+  closeCv.addEventListener("click", () => setOverlay(false));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("is-open")) {
+      setOverlay(false);
+    }
+  });
+
+  loadGallery();
+  loadCv();
+  enableClickScroll(document.getElementById("gallery"));
+</script>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
