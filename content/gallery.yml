@@ -1,1000 +1,1220 @@
 items:
-  - image: /images/uploads/1.jpeg
-    alt: Digital Image Expo 1
-    caption: Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet,
-      32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019,
-      Vent Space, Tallinn, Estonia.
-    category: DigitalImagesExpo
-  - image: /images/uploads/2.jpeg
-    alt: Digital Image Expo 2
-    caption: Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet,
-      32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019,
-      Vent Space, Tallinn, Estonia.
-    category: DigitalImagesExpo
-  - image: /images/uploads/3.jpeg
-    alt: Digital Image Expo 3
-    caption: Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet,
-      32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019,
-      Vent Space, Tallinn, Estonia.
-    category: DigitalImagesExpo
-  - image: /images/uploads/4.jpg
-    alt: Digital Image Expo 4
-    caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
-      print, 23,5 x 33 cm, 2023, Ghent, Belgium.
-    category: DigitalImagesExpo
-  - image: /images/uploads/5.jpg
-    alt: Digital Image Expo 5
-    caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
-      print, 23,5 x 33 cm, 2023, Ghent, Belgium.
-    category: DigitalImagesExpo
-  - image: /images/uploads/6.jpg
-    alt: Digital Image Expo 6
-    caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
-      print, 23,5 x 33 cm, 2023, Ghent, Belgium.
-    category: DigitalImagesExpo
-  - image: /Photos/AnalogImagesExpo/1.jpg
-    alt: Analog Images Expo 1
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/2.jpg
-    alt: Analog Images Expo 2
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/3.jpg
-    alt: Analog Images Expo 3
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/4.jpg
-    alt: Analog Images Expo 4
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/5.jpg
-    alt: Analog Images Expo 5
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/6.jpg
-    alt: Analog Images Expo 6
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/7.jpg
-    alt: Analog Images Expo 7
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/8.jpg
-    alt: Analog Images Expo 8
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/9.jpg
-    alt: Analog Images Expo 9
-    caption: Personal archive, 2022.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/10.jpg
-    alt: Analog Images Expo 10
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/11.jpg
-    alt: Analog Images Expo 11
-    caption: <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33
-      cm, 2023, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/12.jpg
-    alt: Analog Images Expo 12
-    caption: Personal archive, 2022.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/13.jpg
-    alt: Analog Images Expo 13
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/14.jpg
-    alt: Analog Images Expo 14
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/15.jpg
-    alt: Analog Images Expo 15
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/AnalogImagesExpo/16.jpg
-    alt: Analog Images Expo 16
-    caption: Scenography of <i>De Weerschijn</i>, photographic series of 5 prints
-      and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.
-    category: AnalogImagesExpo
-  - image: /Photos/WorkFavorites/1.jpg
-    alt: Personal Work Favorite 1
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/2.jpg
-    alt: Personal Work Favorite 2
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/3.jpg
-    alt: Personal Work Favorite 3
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/4.jpg
-    alt: Personal Work Favorite 4
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/5.jpg
-    alt: Personal Work Favorite 5
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/6.jpg
-    alt: Personal Work Favorite 6
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/7.jpg
-    alt: Personal Work Favorite 7
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/8.jpg
-    alt: Personal Work Favorite 8
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/9.jpg
-    alt: Personal Work Favorite 9
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/10.jpg
-    alt: Personal Work Favorite 10
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/11.jpg
-    alt: Personal Work Favorite 11
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/12.jpg
-    alt: Personal Work Favorite 12
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/13.jpg
-    alt: Personal Work Favorite 13
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/14.jpg
-    alt: Personal Work Favorite 14
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/15.jpg
-    alt: Personal Work Favorite 15
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/16.jpg
-    alt: Personal Work Favorite 16
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/17.jpg
-    alt: Personal Work Favorite 17
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/18.jpg
-    alt: Personal Work Favorite 18
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/19.jpg
-    alt: Personal Work Favorite 19
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/20.jpg
-    alt: Personal Work Favorite 20
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/21.jpg
-    alt: Personal Work Favorite 21
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/22.jpg
-    alt: Personal Work Favorite 22
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/23.jpg
-    alt: Personal Work Favorite 23
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/24.jpg
-    alt: Personal Work Favorite 24
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/25.jpg
-    alt: Personal Work Favorite 25
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/26.jpg
-    alt: Personal Work Favorite 26
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/27.jpg
-    alt: Personal Work Favorite 27
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/28.jpg
-    alt: Personal Work Favorite 28
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/29.jpg
-    alt: Personal Work Favorite 29
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/30.jpg
-    alt: Personal Work Favorite 30
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/31.jpg
-    alt: Personal Work Favorite 31
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/32.jpg
-    alt: Personal Work Favorite 32
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/33.jpg
-    alt: Personal Work Favorite 33
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/34.jpg
-    alt: Personal Work Favorite 34
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/35.jpg
-    alt: Personal Work Favorite 35
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/36.jpg
-    alt: Personal Work Favorite 36
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/37.jpg
-    alt: Personal Work Favorite 37
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/38.jpg
-    alt: Personal Work Favorite 38
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/39.jpg
-    alt: Personal Work Favorite 39
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/40.jpg
-    alt: Personal Work Favorite 40
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/41.jpg
-    alt: Personal Work Favorite 41
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/42.jpg
-    alt: Personal Work Favorite 42
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/43.jpg
-    alt: Personal Work Favorite 43
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/44.jpg
-    alt: Personal Work Favorite 44
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/45.jpg
-    alt: Personal Work Favorite 45
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/46.jpg
-    alt: Personal Work Favorite 46
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/47.jpg
-    alt: Personal Work Favorite 47
-    caption: From the ongoing series <i>De Weerschijn</i>, 2024.
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/48.jpg
-    alt: Personal Work Favorite 48
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/49.jpg
-    alt: Personal Work Favorite 49
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/WorkFavorites/50.jpg
-    alt: Personal Work Favorite 50
-    caption: " From the series <i>Dat wij er waren</i>, 2023."
-    category: WorkFavorites
-  - image: /Photos/Commercial/Komkommer Zoe-1.jpg
-    alt: Commercial Image 1
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-2.jpg
-    alt: Commercial Image 2
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-3.jpg
-    alt: Commercial Image 3
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-4.jpg
-    alt: Commercial Image 4
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-5.jpg
-    alt: Commercial Image 5
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-6.jpg
-    alt: Commercial Image 6
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-7.jpg
-    alt: Commercial Image 7
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-8.jpg
-    alt: Commercial Image 8
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-9.jpg
-    alt: Commercial Image 9
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-10.jpg
-    alt: Commercial Image 10
-    caption: For Hanne Cornette, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-11.jpg
-    alt: Commercial Image 11
-    caption: For Hanne Cornette, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-12.jpg
-    alt: Commercial Image 12
-    caption: For Hanne Cornette, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-13.jpg
-    alt: Commercial Image 13
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-14.jpg
-    alt: Commercial Image 14
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-17.jpg
-    alt: Commercial Image 17
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-19.jpg
-    alt: Commercial Image 19
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-20.jpg
-    alt: Commercial Image 20
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-21.jpg
-    alt: Commercial Image 21
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-22.jpg
-    alt: Commercial Image 22
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-23.jpg
-    alt: Commercial Image 23
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-24.jpg
-    alt: Commercial Image 24
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-26.jpg
-    alt: Commercial Image 25
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-27.jpg
-    alt: Commercial Image 26
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-28.jpg
-    alt: Commercial Image 27
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-29.jpg
-    alt: Commercial Image 28
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-30.jpg
-    alt: Commercial Image 29
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-31.jpg
-    alt: Commercial Image 30
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-33.jpg
-    alt: Commercial Image 40
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-34.jpg
-    alt: Commercial Image 41
-    caption: For Daily, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-35.jpg
-    alt: Commercial Image 42
-    caption: For Daily, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-36.jpg
-    alt: Commercial Image 43
-    caption: For Daily, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-38.jpg
-    alt: Commercial Image 44
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-39.jpg
-    alt: Commercial Image 45
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-40.jpg
-    alt: Commercial Image 46
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-41.jpg
-    alt: Commercial Image 47
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-42.jpg
-    alt: Commercial Image 48
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-43.jpg
-    alt: Commercial Image 49
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-44.jpg
-    alt: Commercial Image 50
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-45.jpg
-    alt: Commercial Image 51
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-46.jpg
-    alt: Commercial Image 52
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-47.jpg
-    alt: Commercial Image 53
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-48.jpg
-    alt: Commercial Image 54
-    caption: For Wolvis, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-49.jpg
-    alt: Commercial Image 55
-    caption: For Daily, 2024.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-50.jpg
-    alt: Commercial Image 56
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-52.jpg
-    alt: Commercial Image 57
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-53.jpg
-    alt: Commercial Image 58
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-54.jpg
-    alt: Commercial Image 59
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-55.jpg
-    alt: Commercial Image 60
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-56.jpg
-    alt: Commercial Image 61
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-58.jpg
-    alt: Commercial Image 63
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-59.jpg
-    alt: Commercial Image 64
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-60.jpg
-    alt: Commercial Image 65
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-61.jpg
-    alt: Commercial Image 66
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-62.jpg
-    alt: Commercial Image 67
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-63.jpg
-    alt: Commercial Image 68
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-65.jpg
-    alt: Commercial Image 69
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-66.jpg
-    alt: Commercial Image 70
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-67.jpg
-    alt: Commercial Image 71
-    caption: For Daily, 2023.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-68.jpg
-    alt: Commercial Image 72
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-69.jpg
-    alt: Commercial Image 73
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-70.jpg
-    alt: Commercial Image 74
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-71.jpg
-    alt: Commercial Image 75
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-72.jpg
-    alt: Commercial Image 76
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-73.jpg
-    alt: Commercial Image 77
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-74.jpg
-    alt: Commercial Image 78
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-75.jpg
-    alt: Commercial Image 79
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-76.jpg
-    alt: Commercial Image 80
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-78.jpg
-    alt: Commercial Image 81
-    caption: For Hanne Cornette, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-80.jpg
-    alt: Commercial Image 82
-    caption: "For Object & Sounds, 2022. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-81.jpg
-    alt: Commercial Image 83
-    caption: For Studio RON, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-82.jpg
-    alt: Commercial Image 84
-    caption: For Studio RON, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-83.jpg
-    alt: Commercial Image 85
-    caption: For Studio RON, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-86.jpg
-    alt: Commercial Image 86
-    caption: For Studio RON, 2022.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-94.jpg
-    alt: Commercial Image 87
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-95.jpg
-    alt: Commercial Image 88
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-96.jpg
-    alt: Commercial Image 89
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-97.jpg
-    alt: Commercial Image 90
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-98.jpg
-    alt: Commercial Image 91
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-99.jpg
-    alt: Commercial Image 92
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-101.jpg
-    alt: Commercial Image 93
-    caption: For Gino Pecqueux, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-103.jpg
-    alt: Commercial Image 94
-    caption: For Hanne Cornette, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-104.jpg
-    alt: Commercial Image 95
-    caption: For Hanne Cornette, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-105.jpg
-    alt: Commercial Image 96
-    caption: For Hanne Cornette, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer Zoe-106.jpg
-    alt: Commercial Image 95
-    caption: For Hanne Cornette, 2021.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-1 2.jpg
-    alt: Commercial Image 96
-    caption: For Atelier Joris, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-1 3.jpg
-    alt: Commercial Image 97
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-1.jpg
-    alt: Commercial Image 98
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-2 2.jpg
-    alt: Commercial Image 99
-    caption: For Atelier Joris, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-2 3.jpg
-    alt: Commercial Image 100
-    caption: "For Objects & Sounds, 2026. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-2 4.jpg
-    alt: Commercial Image 101
-    caption: "For Objects & Sounds, 2026. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-2.jpg
-    alt: Commercial Image 102
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-3.jpg
-    alt: Commercial Image 103
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-4 2.jpg
-    alt: Commercial Image 104
-    caption: "For Objects & Sounds, 2026. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-4.jpg
-    alt: Commercial Image 105
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-5 2.jpg
-    alt: Commercial Image 106
-    caption: "For Objects & Sounds, 2026. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-5.jpg
-    alt: Commercial Image 107
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-6.jpg
-    alt: Commercial Image 108
-    caption: "For Atelier Joris, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-7 kopie.jpg
-    alt: Commercial Image 109
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-7.jpg
-    alt: Commercial Image 110
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-8.jpg
-    alt: Commercial Image 111
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-9.jpg
-    alt: Commercial Image 112
-    caption: For Objects & Sounds, 2025.
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-10 2.jpg
-    alt: Commercial Image 113
-    caption: "For Atelier Joris, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-10.jpg
-    alt: Commercial Image 114
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-11.jpg
-    alt: Commercial Image 115
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-12 2.jpg
-    alt: Commercial Image 116
-    caption: "For Atelier Joris, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-12.jpg
-    alt: Commercial Image 117
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-13 2.jpg
-    alt: Commercial Image 118
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-13.jpg
-    alt: Commercial Image 119
-    caption: "For Atelier Joris, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-14.jpg
-    alt: Commercial Image 120
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-15.jpg
-    alt: Commercial Image 121
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-17.jpg
-    alt: Commercial Image 122
-    caption: "For Objects & Sounds, 2026. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-18 2.jpg
-    alt: Commercial Image 123
-    caption: "For Objects & Sounds, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-18.jpg
-    alt: Commercial Image 124
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-19.jpg
-    alt: Commercial Image 125
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-23.jpg
-    alt: Commercial Image 126
-    caption: "For Atelier Joris, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-25.jpg
-    alt: Commercial Image 127
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Commercial/Komkommer_Zoe-30.jpg
-    alt: Commercial Image 129
-    caption: "For Viktoria von Malottki, 2025. "
-    category: Commercial
-  - image: /Photos/Mobile/1DAD596C-3CDF-43BD-B1E1-55E7BE729DAE.jpg
-    alt: Mobile Image 1
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/9BC625E1-003E-4D5D-A8BB-E3CA0E8540BC.jpg
-    alt: Mobile Image 2
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/DCBEE3DC-2C51-47A6-8800-AEE6AE7EAB62.jpg
-    alt: Mobile Image 3
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_5914.jpeg
-    alt: Mobile Image 4
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_5926.jpeg
-    alt: Mobile Image 5
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_5909.jpeg
-    alt: Mobile Image 6
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_5923.jpeg
-    alt: Mobile Image 7
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_3994.jpeg
-    alt: Mobile Image 8
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8112.jpeg
-    alt: Mobile Image 9
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8016.jpeg
-    alt: Mobile Image 10
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/A3E854EF-D96D-4B34-AC0C-89B012790675.jpg
-    alt: Mobile Image 11
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_7109.jpeg
-    alt: Mobile Image 12
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_2235.jpeg
-    alt: Mobile Image 13
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9895.jpeg
-    alt: Mobile Image 14
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8926.jpeg
-    alt: Mobile Image 15
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8892.jpeg
-    alt: Mobile Image 16
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8961.jpeg
-    alt: Mobile Image 17
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8798.jpeg
-    alt: Mobile Image 18
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8385.jpeg
-    alt: Mobile Image 19
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8809.jpeg
-    alt: Mobile Image 20
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8831.jpeg
-    alt: Mobile Image 21
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_5573.jpeg
-    alt: Mobile Image 22
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_2200.jpeg
-    alt: Mobile Image 23
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_4036.jpeg
-    alt: Mobile Image 24
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_4012.jpeg
-    alt: Mobile Image 25
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_4017.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_1746.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_1754.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_1752.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_1745.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_1727.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_0899.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_0897.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_0880.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9021.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8597.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8497.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8236.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8215.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_7663.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_2183.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8375.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_3987.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2024. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9758 2.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2025. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9779.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2025. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9799.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2025. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9803.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2025. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_9870.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2025. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8995.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8826.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_8178.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_6855.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2023. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_2186.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2022. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_7713 2.jpeg
-    alt: Mobile Image 26
-    caption: "Personal archive, 2021. "
-    category: Mobile
-  - image: /Photos/Mobile/IMG_6343.HEIC
-    alt: Mobile Image 26
-    caption: "Personal archive, 2026. "
-    category: Mobile
+  - image: "/images/uploads/1.jpeg"
+    alt: "Digital Image Expo 1"
+    caption: "Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia."
+    category: "DigitalImagesExpo"
+
+  - image: "/images/uploads/2.jpeg"
+    alt: "Digital Image Expo 2"
+    caption: "Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia."
+    category: "DigitalImagesExpo"
+
+  - image: "/images/uploads/3.jpeg"
+    alt: "Digital Image Expo 3"
+    caption: "Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia."
+    category: "DigitalImagesExpo"
+
+  - image: "/images/uploads/4.jpg"
+    alt: "Digital Image Expo 4"
+    caption: "Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "DigitalImagesExpo"
+
+  - image: "/images/uploads/5.jpg"
+    alt: "Digital Image Expo 5"
+    caption: "Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "DigitalImagesExpo"
+
+  - image: "/images/uploads/6.jpg"
+    alt: "Digital Image Expo 6"
+    caption: "Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "DigitalImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/1.jpg"
+    alt: "Analog Images Expo 1"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/2.jpg"
+    alt: "Analog Images Expo 2"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/3.jpg"
+    alt: "Analog Images Expo 3"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/4.jpg"
+    alt: "Analog Images Expo 4"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/5.jpg"
+    alt: "Analog Images Expo 5"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/6.jpg"
+    alt: "Analog Images Expo 6"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/7.jpg"
+    alt: "Analog Images Expo 7"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/8.jpg"
+    alt: "Analog Images Expo 8"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/9.jpg"
+    alt: "Analog Images Expo 9"
+    caption: "Personal archive, 2022."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/10.jpg"
+    alt: "Analog Images Expo 10"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/11.jpg"
+    alt: "Analog Images Expo 11"
+    caption: "<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/12.jpg"
+    alt: "Analog Images Expo 12"
+    caption: "Personal archive, 2022."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/13.jpg"
+    alt: "Analog Images Expo 13"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/14.jpg"
+    alt: "Analog Images Expo 14"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/15.jpg"
+    alt: "Analog Images Expo 15"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/AnalogImagesExpo/16.jpg"
+    alt: "Analog Images Expo 16"
+    caption: "Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium."
+    category: "AnalogImagesExpo"
+
+  - image: "/Photos/WorkFavorites/1.jpg"
+    alt: "Personal Work Favorite 1"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/2.jpg"
+    alt: "Personal Work Favorite 2"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/3.jpg"
+    alt: "Personal Work Favorite 3"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/4.jpg"
+    alt: "Personal Work Favorite 4"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/5.jpg"
+    alt: "Personal Work Favorite 5"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/6.jpg"
+    alt: "Personal Work Favorite 6"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/7.jpg"
+    alt: "Personal Work Favorite 7"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/8.jpg"
+    alt: "Personal Work Favorite 8"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/9.jpg"
+    alt: "Personal Work Favorite 9"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/10.jpg"
+    alt: "Personal Work Favorite 10"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/11.jpg"
+    alt: "Personal Work Favorite 11"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/12.jpg"
+    alt: "Personal Work Favorite 12"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/13.jpg"
+    alt: "Personal Work Favorite 13"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/14.jpg"
+    alt: "Personal Work Favorite 14"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/15.jpg"
+    alt: "Personal Work Favorite 15"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/16.jpg"
+    alt: "Personal Work Favorite 16"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/17.jpg"
+    alt: "Personal Work Favorite 17"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/18.jpg"
+    alt: "Personal Work Favorite 18"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/19.jpg"
+    alt: "Personal Work Favorite 19"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/20.jpg"
+    alt: "Personal Work Favorite 20"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/21.jpg"
+    alt: "Personal Work Favorite 21"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/22.jpg"
+    alt: "Personal Work Favorite 22"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/23.jpg"
+    alt: "Personal Work Favorite 23"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/24.jpg"
+    alt: "Personal Work Favorite 24"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/25.jpg"
+    alt: "Personal Work Favorite 25"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/26.jpg"
+    alt: "Personal Work Favorite 26"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/27.jpg"
+    alt: "Personal Work Favorite 27"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/28.jpg"
+    alt: "Personal Work Favorite 28"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/29.jpg"
+    alt: "Personal Work Favorite 29"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/30.jpg"
+    alt: "Personal Work Favorite 30"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/31.jpg"
+    alt: "Personal Work Favorite 31"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/32.jpg"
+    alt: "Personal Work Favorite 32"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/33.jpg"
+    alt: "Personal Work Favorite 33"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/34.jpg"
+    alt: "Personal Work Favorite 34"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/35.jpg"
+    alt: "Personal Work Favorite 35"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/36.jpg"
+    alt: "Personal Work Favorite 36"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/37.jpg"
+    alt: "Personal Work Favorite 37"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/38.jpg"
+    alt: "Personal Work Favorite 38"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/39.jpg"
+    alt: "Personal Work Favorite 39"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/40.jpg"
+    alt: "Personal Work Favorite 40"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/41.jpg"
+    alt: "Personal Work Favorite 41"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/42.jpg"
+    alt: "Personal Work Favorite 42"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/43.jpg"
+    alt: "Personal Work Favorite 43"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/44.jpg"
+    alt: "Personal Work Favorite 44"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/45.jpg"
+    alt: "Personal Work Favorite 45"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/46.jpg"
+    alt: "Personal Work Favorite 46"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/47.jpg"
+    alt: "Personal Work Favorite 47"
+    caption: "From the ongoing series <i>De Weerschijn</i>, 2024."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/48.jpg"
+    alt: "Personal Work Favorite 48"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/49.jpg"
+    alt: "Personal Work Favorite 49"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/WorkFavorites/50.jpg"
+    alt: "Personal Work Favorite 50"
+    caption: "From the series <i>Dat wij er waren</i>, 2023."
+    category: "WorkFavorites"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-1.jpg"
+    alt: "Commercial Image 1"
+    caption: "For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-2.jpg"
+    alt: "Commercial Image 2"
+    caption: "For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-3.jpg"
+    alt: "Commercial Image 3"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-4.jpg"
+    alt: "Commercial Image 4"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-5.jpg"
+    alt: "Commercial Image 5"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-6.jpg"
+    alt: "Commercial Image 6"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-7.jpg"
+    alt: "Commercial Image 7"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-8.jpg"
+    alt: "Commercial Image 8"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-9.jpg"
+    alt: "Commercial Image 9"
+    caption: "For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-10.jpg"
+    alt: "Commercial Image 10"
+    caption: "For Hanne Cornette, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-11.jpg"
+    alt: "Commercial Image 11"
+    caption: "For Hanne Cornette, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-12.jpg"
+    alt: "Commercial Image 12"
+    caption: "For Hanne Cornette, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-13.jpg"
+    alt: "Commercial Image 13"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-14.jpg"
+    alt: "Commercial Image 14"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-17.jpg"
+    alt: "Commercial Image 17"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-19.jpg"
+    alt: "Commercial Image 19"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-20.jpg"
+    alt: "Commercial Image 20"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-21.jpg"
+    alt: "Commercial Image 21"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-22.jpg"
+    alt: "Commercial Image 22"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-23.jpg"
+    alt: "Commercial Image 23"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-24.jpg"
+    alt: "Commercial Image 24"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-26.jpg"
+    alt: "Commercial Image 25"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-27.jpg"
+    alt: "Commercial Image 26"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-28.jpg"
+    alt: "Commercial Image 27"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-29.jpg"
+    alt: "Commercial Image 28"
+    caption: "For Objects & Sounds, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-30.jpg"
+    alt: "Commercial Image 29"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-31.jpg"
+    alt: "Commercial Image 30"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-33.jpg"
+    alt: "Commercial Image 40"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-34.jpg"
+    alt: "Commercial Image 41"
+    caption: "For Daily, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-35.jpg"
+    alt: "Commercial Image 42"
+    caption: "For Daily, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-36.jpg"
+    alt: "Commercial Image 43"
+    caption: "For Daily, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-38.jpg"
+    alt: "Commercial Image 44"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-39.jpg"
+    alt: "Commercial Image 45"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-40.jpg"
+    alt: "Commercial Image 46"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-41.jpg"
+    alt: "Commercial Image 47"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-42.jpg"
+    alt: "Commercial Image 48"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-43.jpg"
+    alt: "Commercial Image 49"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-44.jpg"
+    alt: "Commercial Image 50"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-45.jpg"
+    alt: "Commercial Image 51"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-46.jpg"
+    alt: "Commercial Image 52"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-47.jpg"
+    alt: "Commercial Image 53"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-48.jpg"
+    alt: "Commercial Image 54"
+    caption: "For Wolvis, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-49.jpg"
+    alt: "Commercial Image 55"
+    caption: "For Daily, 2024."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-50.jpg"
+    alt: "Commercial Image 56"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-52.jpg"
+    alt: "Commercial Image 57"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-53.jpg"
+    alt: "Commercial Image 58"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-54.jpg"
+    alt: "Commercial Image 59"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-55.jpg"
+    alt: "Commercial Image 60"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-56.jpg"
+    alt: "Commercial Image 61"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-58.jpg"
+    alt: "Commercial Image 63"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-59.jpg"
+    alt: "Commercial Image 64"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-60.jpg"
+    alt: "Commercial Image 65"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-61.jpg"
+    alt: "Commercial Image 66"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-62.jpg"
+    alt: "Commercial Image 67"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-63.jpg"
+    alt: "Commercial Image 68"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-65.jpg"
+    alt: "Commercial Image 69"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-66.jpg"
+    alt: "Commercial Image 70"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-67.jpg"
+    alt: "Commercial Image 71"
+    caption: "For Daily, 2023."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-68.jpg"
+    alt: "Commercial Image 72"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-69.jpg"
+    alt: "Commercial Image 73"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-70.jpg"
+    alt: "Commercial Image 74"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-71.jpg"
+    alt: "Commercial Image 75"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-72.jpg"
+    alt: "Commercial Image 76"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-73.jpg"
+    alt: "Commercial Image 77"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-74.jpg"
+    alt: "Commercial Image 78"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-75.jpg"
+    alt: "Commercial Image 79"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-76.jpg"
+    alt: "Commercial Image 80"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-78.jpg"
+    alt: "Commercial Image 81"
+    caption: "For Hanne Cornette, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-80.jpg"
+    alt: "Commercial Image 82"
+    caption: "For Object & Sounds, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-81.jpg"
+    alt: "Commercial Image 83"
+    caption: "For Studio RON, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-82.jpg"
+    alt: "Commercial Image 84"
+    caption: "For Studio RON, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-83.jpg"
+    alt: "Commercial Image 85"
+    caption: "For Studio RON, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-86.jpg"
+    alt: "Commercial Image 86"
+    caption: "For Studio RON, 2022."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-94.jpg"
+    alt: "Commercial Image 87"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-95.jpg"
+    alt: "Commercial Image 88"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-96.jpg"
+    alt: "Commercial Image 89"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-97.jpg"
+    alt: "Commercial Image 90"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-98.jpg"
+    alt: "Commercial Image 91"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-99.jpg"
+    alt: "Commercial Image 92"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-101.jpg"
+    alt: "Commercial Image 93"
+    caption: "For Gino Pecqueux, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-103.jpg"
+    alt: "Commercial Image 94"
+    caption: "For Hanne Cornette, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-104.jpg"
+    alt: "Commercial Image 95"
+    caption: "For Hanne Cornette, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-105.jpg"
+    alt: "Commercial Image 96"
+    caption: "For Hanne Cornette, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer Zoe-106.jpg"
+    alt: "Commercial Image 95"
+    caption: "For Hanne Cornette, 2021."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-1 2.jpg"
+    alt: "Commercial Image 96"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-1 3.jpg"
+    alt: "Commercial Image 97"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-1.jpg"
+    alt: "Commercial Image 98"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-2 2.jpg"
+    alt: "Commercial Image 99"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-2 3.jpg"
+    alt: "Commercial Image 100"
+    caption: "For Objects & Sounds, 2026."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-2 4.jpg"
+    alt: "Commercial Image 101"
+    caption: "For Objects & Sounds, 2026."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-2.jpg"
+    alt: "Commercial Image 102"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-3.jpg"
+    alt: "Commercial Image 103"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-4 2.jpg"
+    alt: "Commercial Image 104"
+    caption: "For Objects & Sounds, 2026."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-4.jpg"
+    alt: "Commercial Image 105"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-5 2.jpg"
+    alt: "Commercial Image 106"
+    caption: "For Objects & Sounds, 2026."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-5.jpg"
+    alt: "Commercial Image 107"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-6.jpg"
+    alt: "Commercial Image 108"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-7 kopie.jpg"
+    alt: "Commercial Image 109"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-7.jpg"
+    alt: "Commercial Image 110"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-8.jpg"
+    alt: "Commercial Image 111"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-9.jpg"
+    alt: "Commercial Image 112"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-10 2.jpg"
+    alt: "Commercial Image 113"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-10.jpg"
+    alt: "Commercial Image 114"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-11.jpg"
+    alt: "Commercial Image 115"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-12 2.jpg"
+    alt: "Commercial Image 116"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-12.jpg"
+    alt: "Commercial Image 117"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-13 2.jpg"
+    alt: "Commercial Image 118"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-13.jpg"
+    alt: "Commercial Image 119"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-14.jpg"
+    alt: "Commercial Image 120"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-15.jpg"
+    alt: "Commercial Image 121"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-17.jpg"
+    alt: "Commercial Image 122"
+    caption: "For Objects & Sounds, 2026."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-18 2.jpg"
+    alt: "Commercial Image 123"
+    caption: "For Objects & Sounds, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-18.jpg"
+    alt: "Commercial Image 124"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-19.jpg"
+    alt: "Commercial Image 125"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-23.jpg"
+    alt: "Commercial Image 126"
+    caption: "For Atelier Joris, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-25.jpg"
+    alt: "Commercial Image 127"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Commercial/Komkommer_Zoe-30.jpg"
+    alt: "Commercial Image 129"
+    caption: "For Viktoria von Malottki, 2025."
+    category: "Commercial"
+
+  - image: "/Photos/Mobile/1DAD596C-3CDF-43BD-B1E1-55E7BE729DAE.jpg"
+    alt: "Mobile Image 1"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/9BC625E1-003E-4D5D-A8BB-E3CA0E8540BC.jpg"
+    alt: "Mobile Image 2"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/DCBEE3DC-2C51-47A6-8800-AEE6AE7EAB62.jpg"
+    alt: "Mobile Image 3"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_5914.jpeg"
+    alt: "Mobile Image 4"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_5926.jpeg"
+    alt: "Mobile Image 5"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_5909.jpeg"
+    alt: "Mobile Image 6"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_5923.jpeg"
+    alt: "Mobile Image 7"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_3994.jpeg"
+    alt: "Mobile Image 8"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8112.jpeg"
+    alt: "Mobile Image 9"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8016.jpeg"
+    alt: "Mobile Image 10"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/A3E854EF-D96D-4B34-AC0C-89B012790675.jpg"
+    alt: "Mobile Image 11"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_7109.jpeg"
+    alt: "Mobile Image 12"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_2235.jpeg"
+    alt: "Mobile Image 13"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9895.jpeg"
+    alt: "Mobile Image 14"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8926.jpeg"
+    alt: "Mobile Image 15"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8892.jpeg"
+    alt: "Mobile Image 16"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8961.jpeg"
+    alt: "Mobile Image 17"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8798.jpeg"
+    alt: "Mobile Image 18"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8385.jpeg"
+    alt: "Mobile Image 19"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8809.jpeg"
+    alt: "Mobile Image 20"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8831.jpeg"
+    alt: "Mobile Image 21"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_5573.jpeg"
+    alt: "Mobile Image 22"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_2200.jpeg"
+    alt: "Mobile Image 23"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_4036.jpeg"
+    alt: "Mobile Image 24"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_4012.jpeg"
+    alt: "Mobile Image 25"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_4017.jpeg"
+    alt: "Mobile Image 26"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_1746.jpeg"
+    alt: "Mobile Image 27"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_1754.jpeg"
+    alt: "Mobile Image 28"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_1752.jpeg"
+    alt: "Mobile Image 29"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_1745.jpeg"
+    alt: "Mobile Image 30"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_1727.jpeg"
+    alt: "Mobile Image 31"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_0899.jpeg"
+    alt: "Mobile Image 32"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_0897.jpeg"
+    alt: "Mobile Image 33"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_0880.jpeg"
+    alt: "Mobile Image 34"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9021.jpeg"
+    alt: "Mobile Image 35"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8597.jpeg"
+    alt: "Mobile Image 36"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8497.jpeg"
+    alt: "Mobile Image 37"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8236.jpeg"
+    alt: "Mobile Image 38"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8215.jpeg"
+    alt: "Mobile Image 39"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_7663.jpeg"
+    alt: "Mobile Image 40"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_2183.jpeg"
+    alt: "Mobile Image 41"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8375.jpeg"
+    alt: "Mobile Image 42"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_3987.jpeg"
+    alt: "Mobile Image 43"
+    caption: "Personal archive, 2024."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9758 2.HEIC"
+    alt: "Mobile Image 44"
+    caption: "Personal archive, 2025."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9779.HEIC"
+    alt: "Mobile Image 45"
+    caption: "Personal archive, 2025."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9799.HEIC"
+    alt: "Mobile Image 46"
+    caption: "Personal archive, 2025."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9803.HEIC"
+    alt: "Mobile Image 47"
+    caption: "Personal archive, 2025."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_9870.HEIC"
+    alt: "Mobile Image 48"
+    caption: "Personal archive, 2025."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8995.jpeg"
+    alt: "Mobile Image 49"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8826.jpeg"
+    alt: "Mobile Image 50"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_8178.jpeg"
+    alt: "Mobile Image 51"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_6855.jpeg"
+    alt: "Mobile Image 52"
+    caption: "Personal archive, 2023."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_2186.jpeg"
+    alt: "Mobile Image 53"
+    caption: "Personal archive, 2022."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_7713 2.jpeg"
+    alt: "Mobile Image 54"
+    caption: "Personal archive, 2021."
+    category: "Mobile"
+
+  - image: "/Photos/Mobile/IMG_6343.HEIC"
+    alt: "Mobile Image 55"
+    caption: "Personal archive, 2026."
+    category: "Mobile"
