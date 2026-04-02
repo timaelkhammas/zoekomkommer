@@ -421,11 +421,28 @@ figcaption{
     document.getElementById('cvName').textContent = data.name || '';
 
     const contact = document.getElementById('cvContact');
-    contact.innerHTML = `
-      <li><span class="contact-label">email</span>: <a href="mailto:${data.contact?.email || ''}">${data.contact?.email || ''}</a></li>
-      <li><span class="contact-label">phone</span>: ${data.contact?.phone || ''}</li>
-      <li><span class="contact-label">insta</span>: ${data.contact?.instagram || ''}</li>
-    `;
+contact.innerHTML = `
+  <li>
+    <span class="contact-label">email</span>: 
+    <a href="mailto:${data.contact?.email || ''}">
+      ${data.contact?.email || ''}
+    </a>
+  </li>
+
+  <li>
+    <span class="contact-label">phone</span>: 
+    <a href="tel:${(data.contact?.phone || '').replace(/\s+/g, '')}">
+      ${data.contact?.phone || ''}
+    </a>
+  </li>
+
+  <li>
+    <span class="contact-label">insta</span>: 
+    <a href="https://instagram.com/${(data.contact?.instagram || '').replace('@','')}" target="_blank" rel="noopener noreferrer">
+      ${data.contact?.instagram || ''}
+    </a>
+  </li>
+`;
 
     const grid = document.getElementById('cvGrid');
     grid.innerHTML = '';
