@@ -309,11 +309,11 @@ items:
     category: WorkFavorites
   - image: /Photos/Commercial/Komkommer Zoe-1.jpg
     alt: Commercial Image 1
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
+    caption: For Objects & Sounds, <i>Sounds on Grief</i>, 2024.
     category: Commercial
   - image: /Photos/Commercial/Komkommer Zoe-2.jpg
     alt: Commercial Image 2
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
+    caption: For Objects & Sounds, <i>Sounds on Grief</i>, 2024.
     category: Commercial
   - image: /Photos/Commercial/Komkommer Zoe-3.jpg
     alt: Commercial Image 3
@@ -341,7 +341,7 @@ items:
     category: Commercial
   - image: /Photos/Commercial/Komkommer Zoe-9.jpg
     alt: Commercial Image 9
-    caption: For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.
+    caption: For Objects & Sounds, <i>Sounds on Grief</i>, 2024.
     category: Commercial
   - image: /Photos/Commercial/Komkommer Zoe-10.jpg
     alt: Commercial Image 10
