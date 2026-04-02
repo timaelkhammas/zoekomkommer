@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - label: "Gallery Items"
+        name: "gallery"
+        file: "content/gallery.yml"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }

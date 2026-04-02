@@ -1,0 +1,4 @@
+items:
+  - image: "/images/uploads/example.jpg"
+    alt: "Example image"
+    caption: "Example caption"

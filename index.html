@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zoé Komkommer</title>
+
+  <style>
+:root{
+  --bg:#f8f7ec;
+  --ink:#111;
+  --muted:#333;
+
+  --gap:12px;              /* master spacing */
+  --pad: 35px;  /* bigger left/right page margins */
+
+  --capW:260px;
+  --capGap:8px;
+
+  --galleryTop:var(--gap);  /* gallery distance from header */
+
+  --imgH: min(480px, calc(100vh - 120px));
+
+  --cvGap:90px;
+  --cvLeft:minmax(240px, 1fr);
+  --cvRight:2fr;
+}
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:"Times New Roman", Times, serif;
+    }
+
+    /* HEADER (gallery page) */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:24px;
+      padding:var(--gap) var(--pad) 0;
+    }
+
+    .site-title{
+      font-style:italic;
+      font-size:14px;
+      line-height:1.15;
+      white-space:nowrap;
+      user-select:none;
+    }
+    .site-title.is-link{ cursor:pointer; }
+    .site-title.is-link:focus-visible{
+      outline:1px solid rgba(0,0,0,.35);
+      outline-offset:3px;
+    }
+
+    .quote{
+      max-width:60ch;
+      font-size:14px;
+      line-height:1.2;
+      text-align:right;
+    }
+    .quote span{ font-size:14px; }
+
+    /* GALLERY WRAP */
+    .gallery-wrap{
+      height: calc(100vh - 86px);
+      padding: 0 var(--pad) var(--bottomSpace);
+      display: flex;
+      align-items: flex-end; /* ← push gallery to bottom */
+      transform: translateY(40px);
+    }
+
+    /* DESKTOP GALLERY: CLICK ONLY */
+    .gallery{
+      height:auto;
+      display:flex;
+      flex-direction:row;
+      gap:var(--gap);
+
+      overflow:hidden;
+      padding:0 0 var(--gap) 0;
+
+      align-items:flex-start;
+      user-select:none;
+      cursor:pointer;
+      scrollbar-width:none;
+    }
+
+    .gallery::-webkit-scrollbar{ width:0; height:0; }
+
+    figure{
+      margin:0;
+      flex:0 0 auto;
+      display:grid;
+      grid-template-rows: var(--imgH) auto;
+      row-gap: var(--capGap);
+      align-items:start;
+      contain: layout paint;
+    }
+
+    .frame{
+      height:var(--imgH);
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      contain: layout paint;
+    }
+
+    img{
+      height:100%;
+      width:auto;
+      object-fit:contain;
+      display:block;
+      transform: translateZ(0);
+    }
+
+    figcaption{
+      width:var(--capW);
+      justify-self:end;
+      text-align:right;
+      font-size:12px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
+    /* ====== CV OVERLAY ====== */
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:var(--bg);
+      color:var(--ink);
+      display:none;
+      z-index:9999;
+    }
+    .overlay.is-open{ display:block; }
+
+    .overlay-inner{
+      position:relative;
+      height:100vh;
+      padding:var(--gap) var(--pad) var(--pad);
+      overflow:auto;
+      font-size:14px;
+      line-height:1.25;
+    }
+
+    .cv-top{
+      display:grid;
+      grid-template-columns: var(--cvLeft) var(--cvRight);
+      column-gap: var(--cvGap);
+      align-items:start;
+      margin-bottom:38px;
+    }
+
+    .overlay-close{
+      position:absolute;
+      top:10px;
+      right:var(--pad);
+
+      background:none;
+      border:0;
+      font-family:inherit;
+      font-size:14px;
+      line-height:1.2;
+      padding:0;
+      cursor:pointer;
+      color:var(--ink);
+    }
+    .overlay-close:hover{ text-decoration:underline; }
+    .overlay-close:focus-visible{
+      outline:1px solid rgba(0,0,0,.35);
+      outline-offset:3px;
+    }
+
+    /* CV GRID */
+    .cv-grid{
+      display:grid;
+      grid-template-columns: var(--cvLeft) var(--cvRight);
+      column-gap: var(--cvGap);
+      row-gap: 38px;
+    }
+
+    .cv-label{
+      text-transform:uppercase;
+      letter-spacing:.02em;
+    }
+
+    .cv-block{ max-width:78ch; }
+    .cv-block em{ font-style:italic; }
+    .cv-block a{ color:inherit; text-decoration:underline; }
+
+    .cv-list{ margin:0; padding:0; list-style:none; }
+    .cv-list li{ margin:0 0 3px 0; }
+
+    .cv-contact{
+      font-size:14px;
+      line-height:1.25;
+    }
+
+    .cv-contact .contact-label{
+      text-decoration: underline;
+    }
+
+    .cv-contact a{
+      text-decoration: none;
+    }
+
+    /* DESKTOP */
+    @media (min-width: 901px){
+      body{ overflow:hidden; }
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px){
+      header{
+        padding:20px var(--pad) 10px;
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .quote{
+        display:none;
+        text-align:left;
+        max-width:60ch;
+      }
+
+      body{ overflow:auto; }
+
+      .gallery-wrap{
+        height:auto;
+        padding: 5px 0 0 0; /* was var(--gap) */
+        overflow-x:auto;
+        overflow-y:visible;
+      }
+
+      .gallery{
+        height:auto;
+        flex-direction:row;
+        overflow-x:auto;
+        overflow-y:visible;
+        padding:20px 0 0 0; /* was 10px */
+        cursor:default;
+        user-select:auto;
+        align-items:flex-start;
+        scrollbar-width:none;
+      }
+
+      img{
+        width:auto;
+        height:min(76vh, 600px); /* was min(68vh, 520px) */
+        object-fit:contain;
+        display:block;
+      }
+
+      .gallery::-webkit-scrollbar{
+        display:none;
+      }
+
+      figure{
+        flex:0 0 auto;
+        grid-template-rows:auto auto;
+        row-gap:10px;
+      }
+
+      .frame{
+        height:auto;
+        justify-content:flex-start;
+      }
+
+      figcaption{
+        width:min(240px, 75vw);
+        justify-self:start;
+        text-align:left;
+      }
+
+      .overlay{
+        position:fixed;
+        inset:0;
+        overflow:hidden; /* prevent body scroll behind */
+      }
+
+      .overlay-inner{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+
+        padding:20px var(--pad) 60px;
+
+        overflow-y:auto; /* ← THIS enables scrolling */
+        -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+      }
+
+      .overlay-close{
+        top:20px;
+        right:var(--pad);
+      }
+
+      .cv-top{
+        grid-template-columns:1fr;
+        row-gap:10px;
+        padding-bottom:12px;
+      }
+
+      .cv-top .cv-contact{
+        margin-top: 15px; 
+      }
+
+      .cv-grid{
+        grid-template-columns:1fr;
+        row-gap:22px;
+        column-gap:0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="site-title is-link" id="openCv" role="button" tabindex="0" aria-controls="cvOverlay" aria-expanded="false">
+      Zoé Komkommer
+    </div>
+
+    <div class="quote">
+      “Van de weerschijn, zoals je ook niet direct in de zon kunt kijken.”<br/>
+      <span>(Bregje Hofstede, <i>Drift</i>, p. 26, 2018)</span>
+    </div>
+  </header>
+
+  <main class="gallery-wrap">
+    <section id="gallery" class="gallery" aria-label="Work gallery"></section>
+  </main>
+
+  <aside id="cvOverlay" class="overlay" aria-hidden="true">
+    <div class="overlay-inner">
+
+      <button class="overlay-close" id="closeCv" type="button" aria-label="Close">close</button>
+
+      <div class="cv-top">
+        <div class="site-title">Zoé Komkommer</div>
+
+        <div class="cv-block cv-contact">
+          <ul class="cv-list">
+            <li><span class="contact-label">email</span>: <a href="mailto:zoekomkommer@hotmail.com">zoekomkommer@hotmail.com</a></li>
+            <li><span class="contact-label">phone</span>: +324 89 31 69 60</li>
+            <li><span class="contact-label">insta</span>: @zoekomkommer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-grid">
+
+        <div class="cv-label">Group exhibitions</div>
+        <div class="cv-block">
+          <ul class="cv-list">
+            <li>2025 Onboards Biënnale, Antwerp, BE</li>
+            <li>2025 The Art Buffet, Zuiderpershuis, Antwerp, BE</li>
+            <li>2024 Pop-up nr.63, Ghent, BE</li>
+            <li>2023 Graduation Show, Ghent, BE</li>
+            <li>2023 <em>Instapklaar</em>, Ghent, BE</li>
+            <li>2022 Graduation Show, Convent Art Space, Ghent, BE</li>
+            <li>2022 <em>Notspot Kunstroute</em>, Antwerp, BE</li>
+            <li>2021 <em>Ondersporen</em>, Cultuurcentrum Hasselt, Hasselt BE</li>
+            <li>2021 <em>Een nabije toekomst</em>, De Markten, Brussels BE</li>
+            <li>2020 Graduation Show, Le Tri Postal, Brussels BE</li>
+            <li>2019 <em>Mid 20’s Pretend They Got It</em>, Vent Space, Tallinn EST</li>
+            <li>2019 <em>BXL makers</em>, Galerie Ravenstein, Brussels BE</li>
+          </ul>
+        </div>
+
+        <div class="cv-label">Publications</div>
+        <div class="cv-block">
+          <ul class="cv-list">
+            <li>2024 <em>Sounds on Grief</em></li>
+            <li>2024 House artist of B’rock Orchestra</li>
+            <li>2023 Self Published Photobook <em>Dat wij er waren</em></li>
+            <li>2022 Stamp for Belgium <em>Young People Make the Future</em></li>
+            <li>2022 Feeling Wonen 223 <em>Jonge makers</em></li>
+            <li>2022 Poetry collection <em>Zo Dun als Liefde</em></li>
+            <li>2022 Knack Weekend <em>De nieuwe Generatie</em></li>
+            <li>2021 Catalog from the exhibition <em>Ondersporen</em></li>
+            <li>2021 Lite on n°13</li>
+            <li>2020 Source: No-Signal Issue 1</li>
+            <li>2020 Graduation Show Poster Narafi</li>
+            <li>2020 Graduation Posters Luca School of Arts</li>
+            <li>2020 Self Published Postcards</li>
+            <li>2019 Lite on n°11</li>
+          </ul>
+        </div>
+
+        <div class="cv-label">Education</div>
+        <div class="cv-block">
+          <ul class="cv-list">
+            <li>2020 - 2023 Academic Master in Visual Arts, Sint Lucas Ghent, Belgium</li>
+            <li>2019 International exchange, EKA Tallinn, Estonia</li>
+            <li>2017 - 2020 Professional Bachelor in Photography, Narafi Brussels, Belgium</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    const items = [
+      // DIGITAL IMAGE EXPO //
+      { src:"Photos/DigitalImagesExpo/1.jpeg", alt:"Dital Image Expo 1",
+        caption:'Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia.' },
+      
+      { src:"Photos/DigitalImagesExpo/2.jpeg", alt:"Dital Image Expo 2",
+      caption:'Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia.' },
+      
+      { src:"Photos/DigitalImagesExpo/3.jpeg", alt:"Dital Image Expo 3",
+      caption:'Scenography of <i>I Never Used to be Sensitive to Noise</i>, booklet, 32 pages, colour print, 13 x 21 cm, monologue in Dutch, 00:01:41, 2019, Vent Space, Tallinn, Estonia.' },
+      
+      { src:"Photos/DigitalImagesExpo/4.jpg", alt:"Dital Image Expo 4",
+      caption:'Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+      
+      { src:"Photos/DigitalImagesExpo/5.jpg", alt:"Dital Image Expo 5",
+      caption:'Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+     
+      { src:"Photos/DigitalImagesExpo/6.jpg", alt:"Dital Image Expo 6",
+      caption:'Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      // ANALOG IMAGE EXPO //
+      { src:"Photos/AnalogImagesExpo/1.jpg", alt:"Analog Images Expo 1", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/2.jpg", alt:"Analog Images Expo 2", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/3.jpg", alt:"Analog Images Expo 3", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/4.jpg", alt:"Analog Images Expo 4", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/5.jpg", alt:"Analog Images Expo 5", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/6.jpg", alt:"Analog Images Expo 6", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/7.jpg", alt:"Analog Images Expo 7", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/8.jpg", alt:"Analog Images Expo 8", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/9.jpg", alt:"Analog Images Expo 9", 
+      caption:'Personal archive, 2022.' },
+
+      { src:"Photos/AnalogImagesExpo/10.jpg", alt:"Analog Images Expo 10", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/11.jpg", alt:"Analog Images Expo 11", 
+      caption:'<i>Dat wij er waren</i>, booklet, 212 pages, colour print, 23,5 x 33 cm, 2023, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/12.jpg", alt:"Analog Images Expo 12", 
+      caption:'Personal archive, 2022.' },
+
+      { src:"Photos/AnalogImagesExpo/13.jpg", alt:"Analog Images Expo 13", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/14.jpg", alt:"Analog Images Expo 14", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/15.jpg", alt:"Analog Images Expo 15", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      { src:"Photos/AnalogImagesExpo/16.jpg", alt:"Analog Images Expo 16", 
+      caption:'Scenography of <i>De Weerschijn</i>, photographic series of 5 prints and 2 printed cloths, 2022, Convent Art Space, Ghent, Belgium.' },
+
+      // PERSONAL WORK FAVORITES //
+      { src:"Photos/WorkFavorites/1.jpg", alt:"Personal Work Favorite 1", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/2.jpg", alt:"Personal Work Favorite 2", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/3.jpg", alt:"Personal Work Favorite 3", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/4.jpg", alt:"Personal Work Favorite 4", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/5.jpg", alt:"Personal Work Favorite 5", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/6.jpg", alt:"Personal Work Favorite 6", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/7.jpg", alt:"Personal Work Favorite 7", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/8.jpg", alt:"Personal Work Favorite 8", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/9.jpg", alt:"Personal Work Favorite 9", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/10.jpg", alt:"Personal Work Favorite 10", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/11.jpg", alt:"Personal Work Favorite 11", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/12.jpg", alt:"Personal Work Favorite 12", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/13.jpg", alt:"Personal Work Favorite 13", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/14.jpg", alt:"Personal Work Favorite 14", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/15.jpg", alt:"Personal Work Favorite 15", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/16.jpg", alt:"Personal Work Favorite 16", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/17.jpg", alt:"Personal Work Favorite 17", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/18.jpg", alt:"Personal Work Favorite 18", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/19.jpg", alt:"Personal Work Favorite 19", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/20.jpg", alt:"Personal Work Favorite 20", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/21.jpg", alt:"Personal Work Favorite 21", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/22.jpg", alt:"Personal Work Favorite 22", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/23.jpg", alt:"Personal Work Favorite 23", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/24.jpg", alt:"Personal Work Favorite 24", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/25.jpg", alt:"Personal Work Favorite 25", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/26.jpg", alt:"Personal Work Favorite 26", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/27.jpg", alt:"Personal Work Favorite 27", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/28.jpg", alt:"Personal Work Favorite 28", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/29.jpg", alt:"Personal Work Favorite 29", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/30.jpg", alt:"Personal Work Favorite 30", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/31.jpg", alt:"Personal Work Favorite 31", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/32.jpg", alt:"Personal Work Favorite 32", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/33.jpg", alt:"Personal Work Favorite 33", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/34.jpg", alt:"Personal Work Favorite 34", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/35.jpg", alt:"Personal Work Favorite 35", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/36.jpg", alt:"Personal Work Favorite 36", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/37.jpg", alt:"Personal Work Favorite 37", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/38.jpg", alt:"Personal Work Favorite 38", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/39.jpg", alt:"Personal Work Favorite 39", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/40.jpg", alt:"Personal Work Favorite 40", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/41.jpg", alt:"Personal Work Favorite 41", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/42.jpg", alt:"Personal Work Favorite 42", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/43.jpg", alt:"Personal Work Favorite 43", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/44.jpg", alt:"Personal Work Favorite 44", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/45.jpg", alt:"Personal Work Favorite 45", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/46.jpg", alt:"Personal Work Favorite 46", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/47.jpg", alt:"Personal Work Favorite 47", 
+      caption:'From the ongoing series <i>De Weerschijn</i>, 2024.' },
+      { src:"Photos/WorkFavorites/48.jpg", alt:"Personal Work Favorite 48", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/49.jpg", alt:"Personal Work Favorite 49", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+      { src:"Photos/WorkFavorites/50.jpg", alt:"Personal Work Favorite 50", 
+      caption:' From the series <i>Dat wij er waren</i>, 2023.' },
+
+      // COMMERCIAL //
+      { src:"Photos/Commercial/Komkommer Zoe-1.jpg", alt:"Commercial Image 1", 
+      caption:'For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-2.jpg", alt:"Commercial Image 2", 
+      caption:'For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-3.jpg", alt:"Commercial Image 3", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-4.jpg", alt:"Commercial Image 4", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-5.jpg", alt:"Commercial Image 5", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-6.jpg", alt:"Commercial Image 6", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-7.jpg", alt:"Commercial Image 7", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-8.jpg", alt:"Commercial Image 8", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-9.jpg", alt:"Commercial Image 9", 
+      caption:'For Objects & Sounds, booklet <i>Sounds on Grief</i>, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-10.jpg", alt:"Commercial Image 10", 
+      caption:'For Hanne Cornette, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-11.jpg", alt:"Commercial Image 11", 
+      caption:'For Hanne Cornette, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-12.jpg", alt:"Commercial Image 12", 
+      caption:'For Hanne Cornette, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-13.jpg", alt:"Commercial Image 13", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-14.jpg", alt:"Commercial Image 14", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-17.jpg", alt:"Commercial Image 17", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-19.jpg", alt:"Commercial Image 19", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-20.jpg", alt:"Commercial Image 20", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-21.jpg", alt:"Commercial Image 21", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-22.jpg", alt:"Commercial Image 22", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-23.jpg", alt:"Commercial Image 23", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-24.jpg", alt:"Commercial Image 24", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-26.jpg", alt:"Commercial Image 25", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-27.jpg", alt:"Commercial Image 26", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-28.jpg", alt:"Commercial Image 27", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-29.jpg", alt:"Commercial Image 28", 
+      caption:'For Objects & Sounds, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-30.jpg", alt:"Commercial Image 29", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-31.jpg", alt:"Commercial Image 30", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-33.jpg", alt:"Commercial Image 40", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-34.jpg", alt:"Commercial Image 41", 
+      caption:'For Daily, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-35.jpg", alt:"Commercial Image 42", 
+      caption:'For Daily, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-36.jpg", alt:"Commercial Image 43", 
+      caption:'For Daily, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-38.jpg", alt:"Commercial Image 44", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-39.jpg", alt:"Commercial Image 45", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-40.jpg", alt:"Commercial Image 46", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-41.jpg", alt:"Commercial Image 47", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-42.jpg", alt:"Commercial Image 48", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-43.jpg", alt:"Commercial Image 49", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-44.jpg", alt:"Commercial Image 50", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-45.jpg", alt:"Commercial Image 51", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-46.jpg", alt:"Commercial Image 52", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-47.jpg", alt:"Commercial Image 53", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-48.jpg", alt:"Commercial Image 54", 
+      caption:'For Wolvis, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-49.jpg", alt:"Commercial Image 55", 
+      caption:'For Daily, 2024.' },
+      { src:"Photos/Commercial/Komkommer Zoe-50.jpg", alt:"Commercial Image 56", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-52.jpg", alt:"Commercial Image 57", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-53.jpg", alt:"Commercial Image 58", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-54.jpg", alt:"Commercial Image 59", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-55.jpg", alt:"Commercial Image 60", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-56.jpg", alt:"Commercial Image 61", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-58.jpg", alt:"Commercial Image 63", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-59.jpg", alt:"Commercial Image 64", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-60.jpg", alt:"Commercial Image 65", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-61.jpg", alt:"Commercial Image 66", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-62.jpg", alt:"Commercial Image 67", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-63.jpg", alt:"Commercial Image 68", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-65.jpg", alt:"Commercial Image 69", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-66.jpg", alt:"Commercial Image 70", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-67.jpg", alt:"Commercial Image 71", 
+      caption:'For Daily, 2023.' },
+      { src:"Photos/Commercial/Komkommer Zoe-68.jpg", alt:"Commercial Image 72", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-69.jpg", alt:"Commercial Image 73", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-70.jpg", alt:"Commercial Image 74", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-71.jpg", alt:"Commercial Image 75", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-72.jpg", alt:"Commercial Image 76", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-73.jpg", alt:"Commercial Image 77", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-74.jpg", alt:"Commercial Image 78", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-75.jpg", alt:"Commercial Image 79", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-76.jpg", alt:"Commercial Image 80", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-78.jpg", alt:"Commercial Image 81", 
+      caption:'For Hanne Cornette, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-80.jpg", alt:"Commercial Image 82", 
+      caption:'For Object & Sounds, 2022. ' },
+      { src:"Photos/Commercial/Komkommer Zoe-81.jpg", alt:"Commercial Image 83", 
+      caption:'For Studio RON, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-82.jpg", alt:"Commercial Image 84", 
+      caption:'For Studio RON, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-83.jpg", alt:"Commercial Image 85", 
+      caption:'For Studio RON, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-86.jpg", alt:"Commercial Image 86", 
+      caption:'For Studio RON, 2022.' },
+      { src:"Photos/Commercial/Komkommer Zoe-94.jpg", alt:"Commercial Image 87", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-95.jpg", alt:"Commercial Image 88", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-96.jpg", alt:"Commercial Image 89", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-97.jpg", alt:"Commercial Image 90", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-98.jpg", alt:"Commercial Image 91", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-99.jpg", alt:"Commercial Image 92", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-101.jpg", alt:"Commercial Image 93", 
+      caption:'For Gino Pecqueux, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-103.jpg", alt:"Commercial Image 94", 
+      caption:'For Hanne Cornette, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-104.jpg", alt:"Commercial Image 95", 
+      caption:'For Hanne Cornette, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-105.jpg", alt:"Commercial Image 96", 
+      caption:'For Hanne Cornette, 2021.' },
+      { src:"Photos/Commercial/Komkommer Zoe-106.jpg", alt:"Commercial Image 95", 
+      
+      caption:'For Hanne Cornette, 2021.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-1 2.jpg", alt:"Commercial Image 96", 
+      caption:'For Atelier Joris, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-1 3.jpg", alt:"Commercial Image 97", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-1.jpg", alt:"Commercial Image 98", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-2 2.jpg", alt:"Commercial Image 99", 
+      caption:'For Atelier Joris, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-2 3.jpg", alt:"Commercial Image 100", 
+      caption:'For Objects & Sounds, 2026. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-2 4.jpg", alt:"Commercial Image 101", 
+      caption:'For Objects & Sounds, 2026. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-2.jpg", alt:"Commercial Image 102", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-3.jpg", alt:"Commercial Image 103", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-4 2.jpg", alt:"Commercial Image 104", 
+      caption:'For Objects & Sounds, 2026. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-4.jpg", alt:"Commercial Image 105", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-5 2.jpg", alt:"Commercial Image 106", 
+      caption:'For Objects & Sounds, 2026. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-5.jpg", alt:"Commercial Image 107", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-6.jpg", alt:"Commercial Image 108", 
+      caption:'For Atelier Joris, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-7 kopie.jpg", alt:"Commercial Image 109", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-7.jpg", alt:"Commercial Image 110", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-8.jpg", alt:"Commercial Image 111", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-9.jpg", alt:"Commercial Image 112", 
+      caption:'For Objects & Sounds, 2025.' },
+      { src:"Photos/Commercial/Komkommer_Zoe-10 2.jpg", alt:"Commercial Image 113", 
+      caption:'For Atelier Joris, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-10.jpg", alt:"Commercial Image 114", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-11.jpg", alt:"Commercial Image 115", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-12 2.jpg", alt:"Commercial Image 116", 
+      caption:'For Atelier Joris, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-12.jpg", alt:"Commercial Image 117", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-13 2.jpg", alt:"Commercial Image 118", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-13.jpg", alt:"Commercial Image 119", 
+      caption:'For Atelier Joris, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-14.jpg", alt:"Commercial Image 120", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-15.jpg", alt:"Commercial Image 121", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-17.jpg", alt:"Commercial Image 122", 
+      caption:'For Objects & Sounds, 2026. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-18 2.jpg", alt:"Commercial Image 123", 
+      caption:'For Objects & Sounds, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-18.jpg", alt:"Commercial Image 124", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-19.jpg", alt:"Commercial Image 125", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-23.jpg", alt:"Commercial Image 126", 
+      caption:'For Atelier Joris, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-25.jpg", alt:"Commercial Image 127", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+      { src:"Photos/Commercial/Komkommer_Zoe-30.jpg", alt:"Commercial Image 129", 
+      caption:'For Viktoria von Malottki, 2025. ' },
+
+      // MOBILE //
+      { src:"Photos/Mobile/1DAD596C-3CDF-43BD-B1E1-55E7BE729DAE.jpg", alt:"Mobile Image 1", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/9BC625E1-003E-4D5D-A8BB-E3CA0E8540BC.jpg", alt:"Mobile Image 2", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/DCBEE3DC-2C51-47A6-8800-AEE6AE7EAB62.jpg", alt:"Mobile Image 3", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_5914.jpeg", alt:"Mobile Image 4", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_5926.jpeg", alt:"Mobile Image 5", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_5909.jpeg", alt:"Mobile Image 6", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_5923.jpeg", alt:"Mobile Image 7", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_3994.jpeg", alt:"Mobile Image 8", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_8112.jpeg", alt:"Mobile Image 9", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8016.jpeg", alt:"Mobile Image 10", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/A3E854EF-D96D-4B34-AC0C-89B012790675.jpg", alt:"Mobile Image 11", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_7109.jpeg", alt:"Mobile Image 12", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_2235.jpeg", alt:"Mobile Image 13", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_9895.jpeg", alt:"Mobile Image 14", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_8926.jpeg", alt:"Mobile Image 15", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8892.jpeg", alt:"Mobile Image 16", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8961.jpeg", alt:"Mobile Image 17", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8798.jpeg", alt:"Mobile Image 18", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8385.jpeg", alt:"Mobile Image 19", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8809.jpeg", alt:"Mobile Image 20", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8831.jpeg", alt:"Mobile Image 21", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_5573.jpeg", alt:"Mobile Image 22", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_2200.jpeg", alt:"Mobile Image 23", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_4036.jpeg", alt:"Mobile Image 24", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_4012.jpeg", alt:"Mobile Image 25", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_4017.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_1746.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_1754.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_1752.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_1745.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_1727.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_0899.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_0897.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_0880.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_9021.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8597.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8497.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8236.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8215.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_7663.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_2183.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_8375.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_3987.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2024. ' },
+      { src:"Photos/Mobile/IMG_9758 2.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2025. ' },
+      { src:"Photos/Mobile/IMG_9779.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2025. ' },
+      { src:"Photos/Mobile/IMG_9799.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2025. ' },
+      { src:"Photos/Mobile/IMG_9803.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2025. ' },
+      { src:"Photos/Mobile/IMG_9870.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2025. ' },
+      { src:"Photos/Mobile/IMG_8995.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8826.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_8178.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_6855.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2023. ' },
+      { src:"Photos/Mobile/IMG_2186.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2022. ' },
+      { src:"Photos/Mobile/IMG_7713 2.jpeg", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2021. ' },
+      { src:"Photos/Mobile/IMG_6343.HEIC", alt:"Mobile Image 26", 
+      caption:'Personal archive, 2026. ' },
+
+    ];
+
+  
+
+
+    function shuffle(arr){
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    const gallery = document.getElementById("gallery");
+
+    const shuffled = shuffle(items);
+    shuffled.forEach(({src, alt, caption}, i) => {
+      const fig = document.createElement("figure");
+      const frame = document.createElement("div");
+      frame.className = "frame";
+
+      const img = document.createElement("img");
+      img.loading = i < 2 ? "eager" : "lazy";
+      img.decoding = "async";
+      img.fetchPriority = i < 2 ? "high" : "low";
+      img.src = src;
+      img.alt = alt;
+
+      const cap = document.createElement("figcaption");
+      cap.innerHTML = caption;
+
+      frame.appendChild(img);
+      fig.appendChild(frame);
+      fig.appendChild(cap);
+      gallery.appendChild(fig);
+    });
+
+    function enableClickScroll(el){
+  const mq = window.matchMedia("(min-width: 901px)");
+  const step = () => Math.round(window.innerWidth * 0.9);
+
+  // 👉 allow trackpad / mouse wheel to scroll horizontally
+  el.addEventListener("wheel", (e) => {
+    if (!mq.matches) return;
+
+    // if horizontal scroll exists, use it
+    const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+
+    el.scrollLeft += delta;
+    e.preventDefault();
+  }, { passive:false });
+
+  let rafId = null;
+
+  function animateScrollTo(targetLeft, duration = 240){
+    if (rafId) cancelAnimationFrame(rafId);
+
+    const startLeft = el.scrollLeft;
+    const maxLeft = el.scrollWidth - el.clientWidth;
+    const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
+    const delta = clampedTarget - startLeft;
+
+    if (Math.abs(delta) < 1) return;
+
+    const start = performance.now();
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+
+    function tick(now){
+      const t = Math.min(1, (now - start) / duration);
+      el.scrollLeft = startLeft + delta * ease(t);
+      if (t < 1) rafId = requestAnimationFrame(tick);
+      else rafId = null;
+    }
+
+    rafId = requestAnimationFrame(tick);
+  }
+
+  // keep your click behavior
+  el.addEventListener("click", (e) => {
+    if (!mq.matches) return;
+    if (document.getElementById("cvOverlay").classList.contains("is-open")) return;
+
+    const rect = el.getBoundingClientRect();
+    const forward = (e.clientX - rect.left) > rect.width / 2;
+
+    const target = el.scrollLeft + (forward ? step() : -step());
+    animateScrollTo(target, 240);
+  });
+}
+    enableClickScroll(gallery);
+
+    const openCv = document.getElementById("openCv");
+    const overlay = document.getElementById("cvOverlay");
+    const closeCv = document.getElementById("closeCv");
+
+    function setOverlay(open){
+      overlay.classList.toggle("is-open", open);
+      overlay.setAttribute("aria-hidden", open ? "false" : "true");
+      openCv.setAttribute("aria-expanded", open ? "true" : "false");
+
+      document.body.style.overflow = open ? "hidden" : "";
+      if (open) closeCv.focus();
+      else openCv.focus();
+    }
+
+    openCv.addEventListener("click", () => setOverlay(true));
+    openCv.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " "){
+        e.preventDefault();
+        setOverlay(true);
+      }
+    });
+
+    closeCv.addEventListener("click", () => setOverlay(false));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && overlay.classList.contains("is-open")) setOverlay(false);
+    });
+  </script>
+</body>
+</html>
