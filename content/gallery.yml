@@ -235,19 +235,19 @@ items:
     alt: Personal Work Favorite 32
     caption: From the series <i>Dat wij er waren</i>, 2023.
     category: WorkFavorites
-  - image: /Photos/WorkFavorites/33.jpg
+  - image: /images/uploads/33-favorite.jpg
     alt: Personal Work Favorite 33
     caption: From the series <i>Dat wij er waren</i>, 2023.
     category: WorkFavorites
-  - image: /Photos/WorkFavorites/34.jpg
+  - image: /images/uploads/34-favorite.jpg
     alt: Personal Work Favorite 34
     caption: From the ongoing series <i>De Weerschijn</i>, 2024.
     category: WorkFavorites
-  - image: /Photos/WorkFavorites/35.jpg
+  - image: /images/uploads/35-favorite.jpg
     alt: Personal Work Favorite 35
     caption: From the ongoing series <i>De Weerschijn</i>, 2024.
     category: WorkFavorites
-  - image: /Photos/WorkFavorites/36.jpg
+  - image: /images/uploads/36-favorite.jpg
     alt: Personal Work Favorite 36
     caption: From the ongoing series <i>De Weerschijn</i>, 2024.
     category: WorkFavorites
@@ -995,6 +995,3 @@ items:
     alt: Mobile Image 55
     caption: Personal archive, 2026.
     category: Mobile
-  - image: /images/uploads/r0026338.jpg
-    category: AnalogImagesExpo
-    caption: Stand-in School for Graphic Design, Berlin
