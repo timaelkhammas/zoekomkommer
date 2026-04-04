@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zoé Komkommer</title>
 
-  <style>
-:root{
+ :root{
   --bg:#f8f7ec;
   --ink:#111;
   --muted:#333;
-  --gap:12px;              /* master spacing */
-  --pad: 35px;  /* bigger left/right page margins */
+  --gap:12px;
+  --pad:35px;
   --capW:260px;
   --capGap:8px;
-  --galleryTop:var(--gap);  /* gallery distance from header */
-  --imgH: min(500px, calc(100vh - 120px));
+  --galleryTop:var(--gap);
+  --imgH:min(500px, calc(100vh - 120px));
   --cvGap:90px;
   --cvLeft:minmax(240px, 1fr);
   --cvRight:2fr;
-  }
+  --ipadTop: 20px;
+}
 
     *{ box-sizing:border-box; }
     html,body{ height:100%; }
@@ -210,11 +210,6 @@ figcaption{
       font-style: italic;
     }
 
-    .cv-block a:hover,
-.cv-contact a:hover{
-  font-style: italic;
-}
-
     /* DESKTOP */
     @media (min-width: 901px){
       body{ overflow:hidden; }
@@ -222,6 +217,10 @@ figcaption{
 
 /* MOBILE */
 @media (max-width: 900px){
+
+  :root{
+    --pad: 16px;   /* or try 12px if you want it tighter */
+  }
 
 header{
   padding:20px var(--pad) 10px;
@@ -313,7 +312,7 @@ figcaption{
 
 .overlay-close{
   top:20px;
-  right:35px;
+  right:var(--pad);
 }
 
 .cv-top{
@@ -331,6 +330,41 @@ figcaption{
   row-gap:22px;
   column-gap:0;
 }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse){
+  .gallery{
+    -webkit-overflow-scrolling: touch;
+    overflow-x:auto;
+  }
+
+  header{
+    padding-top: var(--ipadTop);
+  }
+
+  .gallery-wrap{
+    padding-top: 80px;
+    transform: translateY(0);
+    align-items: flex-start;
+  }
+
+  .overlay-inner{
+    position:relative;
+    min-height:100vh;
+    min-height:100dvh;
+    padding: var(--ipadTop) var(--pad) 120px;
+    overflow:auto;
+    font-size:14px;
+    line-height:1.25;
+  }
+
+  .cv-top{
+    margin-bottom:38px;
+  }
+
+  .overlay-close{
+    top: var(--ipadTop);
+  }
 }
   </style>
 </head>
@@ -471,7 +505,7 @@ contact.innerHTML = `
   }
 
   function enableClickScroll(el) {
-    const mq = window.matchMedia("(min-width: 901px)");
+    const mq = window.matchMedia("(min-width: 901px) and (hover: hover)");
     const step = () => Math.round(window.innerWidth * 0.9);
 
     el.addEventListener("wheel", (e) => {
