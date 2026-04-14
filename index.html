@@ -63,15 +63,13 @@
     .quote span{ font-size:14px; }
 
     /* GALLERY WRAP */
-    .gallery-wrap{
-      height: calc(100vh - 86px);
-      padding: 0 var(--pad) var(--bottomSpace);
-      display: flex;
-      align-items: flex-end; /* ← push gallery to bottom */
-      transform: translateY(40px);
-      padding-left: calc(var(--pad) + var(--gap));
-      padding-right: var(--pad);
-    }
+.gallery-wrap{
+  height: calc(100vh - 86px);
+  padding: 0 0 var(--bottomSpace) 0; /* no side padding */
+  display: flex;
+  align-items: flex-end;
+  transform: translateY(40px);
+}
 
     /* DESKTOP GALLERY: CLICK ONLY */
     .gallery{
@@ -83,6 +81,7 @@
       overflow:hidden;
       padding:0 0 var(--gap) 0;
       margin-left: 0;
+      padding-left: 0;
       align-items:flex-start;
       user-select:none;
       cursor:pointer;
