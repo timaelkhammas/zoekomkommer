@@ -63,33 +63,30 @@
     .quote span{ font-size:14px; }
 
     /* GALLERY WRAP */
-.gallery-wrap{
-  height: calc(100vh - 86px);
-  padding: 0 0 var(--bottomSpace) 0;
-  display: flex;
-  align-items: flex-end;
-  transform: translateY(40px);
-}
+    .gallery-wrap{
+      height: calc(100vh - 86px);
+      padding: 0 var(--pad) var(--bottomSpace);
+      display: flex;
+      align-items: flex-end; /* ← push gallery to bottom */
+      transform: translateY(40px);
+    }
 
-.gallery{
-  height:auto;
-  display:flex;
-  flex-direction:row;
-  gap:var(--gap);
-  overflow-x:auto;
-  overflow-y:hidden;
-  padding:0 0 var(--gap) 0;
-  align-items:flex-start;
-  user-select:none;
-  cursor:pointer;
-  scrollbar-width:none;
-}
+    /* DESKTOP GALLERY: CLICK ONLY */
+    .gallery{
+      height:auto;
+      display:flex;
+      flex-direction:row;
+      gap:var(--gap);
 
-.lead-spacer{
-  flex: 0 0 calc(var(--pad) + var(--gap));
-  height: 1px;
-}
-    
+      overflow:hidden;
+      padding:0 0 var(--gap) 0;
+
+      align-items:flex-start;
+      user-select:none;
+      cursor:pointer;
+      scrollbar-width:none;
+    }
+
     .gallery::-webkit-scrollbar{ width:0; height:0; }
 
 
@@ -409,14 +406,6 @@ figcaption{
 <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
 
 <script>
-  gallery.innerHTML = "";
-
-if (window.innerWidth > 900) {
-  const spacer = document.createElement("div");
-  spacer.className = "lead-spacer";
-  gallery.appendChild(spacer);
-}
-  
   async function loadGallery() {
     const res = await fetch('/content/gallery.yml');
     const text = await res.text();
@@ -532,7 +521,7 @@ contact.innerHTML = `
 
     function animateScrollTo(targetLeft, duration = 240) {
       if (rafId) cancelAnimationFrame(rafId);
-
+      
       const startLeft = el.scrollLeft;
       const maxLeft = el.scrollWidth - el.clientWidth;
       const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
