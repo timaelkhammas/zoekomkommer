@@ -235,7 +235,7 @@
     }
 
     /* MOBILE */
-    @media (max-width: 900px){
+@media (max-width: 900px){
   :root{
     --pad:16px;
   }
@@ -329,7 +329,7 @@
     left:0;
     right:0;
     bottom:0;
-    padding: 20px var(--pad) 100px; /* was 20px */
+    padding:20px var(--pad) 100px;
     overflow-y:auto;
     -webkit-overflow-scrolling:touch;
   }
@@ -339,23 +339,29 @@
     right:var(--pad);
   }
 
+  /* tighter top section */
   .cv-top{
     grid-template-columns:1fr;
-    row-gap:6px;
-    padding-bottom:6px;
-    margin-bottom:20px;
+    row-gap:4px;          /* was 6px */
+    padding-bottom:4px;   /* was 6px */
+    margin-bottom:10px;   /* was 20px */
   }
 
   .cv-top .cv-contact{
-    margin-top:8px;
+    margin-top:4px;       /* was 8px */
   }
 
+  /* tighter grid spacing */
   .cv-grid{
     grid-template-columns:1fr;
-    row-gap:22px;
+    row-gap:16px;         /* was 22px */
     column-gap:0;
   }
-  
+
+  /* pull bio slightly higher */
+  .cv-grid .cv-block:first-of-type{
+    margin-top:-6px;
+  }
 }
 
     @media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse){
