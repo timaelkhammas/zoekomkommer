@@ -771,6 +771,10 @@ items:
     alt: Commercial Image 138
     caption: For Viktoria von Malottki, 2025.
     category: Commercial
+  - image: /images/uploads/komkommer_zoe-30.jpg
+    category: Commercial
+    caption: For Viktoria von Malottki, 2025.
+    alt: Commercial Image 139
   - image: /images/uploads/1dad596c-3cdf-43bd-b1e1-55e7be729dae.jpg
     alt: Mobile Image 1
     caption: Personal archive, 2022.
@@ -831,6 +835,3 @@ items:
     alt: Mobile Image 14
     caption: Personal archive, 2022.
     category: Mobile
-  - image: /images/uploads/komkommer_zoe-30.jpg
-    category: Commercial
-    caption: For Viktoria von Malottki, 2025.
