@@ -236,124 +236,126 @@
 
     /* MOBILE */
     @media (max-width: 900px){
-      :root{
-        --pad:16px;
-      }
+  :root{
+    --pad:16px;
+  }
 
-      header{
-        padding:20px var(--pad) 10px;
-        flex-direction:column;
-        align-items:flex-start;
-      }
+  header{
+    padding:20px var(--pad) 10px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
 
-      .quote{
-        display:none;
-        text-align:left;
-        max-width:60ch;
-      }
+  .quote{
+    display:none;
+    text-align:left;
+    max-width:60ch;
+  }
 
-      body{
-        overflow:auto;
-      }
+  body{
+    overflow:auto;
+  }
 
-      .gallery-wrap{
-        height:auto;
-        padding:90px 0 0 0;
-        overflow-x:auto;
-        overflow-y:visible;
-        -ms-overflow-style:none;
-        scrollbar-width:none;
-        transform:none;
-      }
+  .gallery-wrap{
+    height:auto;
+    padding:90px 0 0 0;
+    overflow-x:auto;
+    overflow-y:visible;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    transform:none;
+  }
 
-      .gallery-wrap::-webkit-scrollbar{
-        display:none;
-      }
+  .gallery-wrap::-webkit-scrollbar{
+    display:none;
+  }
 
-      .gallery{
-        height:auto;
-        flex-direction:row;
-        overflow-x:visible;
-        overflow-y:visible;
-        padding:20px 20vw 0 0;
-        margin-left:var(--pad);
-        cursor:default;
-        user-select:auto;
-        align-items:flex-start;
-        scrollbar-width:none;
-      }
+  .gallery{
+    height:auto;
+    flex-direction:row;
+    overflow-x:visible;
+    overflow-y:visible;
+    padding:20px 20vw 0 0;
+    margin-left:var(--pad);
+    cursor:default;
+    user-select:auto;
+    align-items:flex-start;
+    scrollbar-width:none;
+  }
 
-      .gallery figure:first-child{
-        transform:none;
-        transition:none;
-      }
+  .gallery figure:first-child{
+    transform:none;
+    transition:none;
+    margin-left:0;
+  }
 
-      img{
-        height:min(80vh, 450px);
-        width:auto;
-        object-fit:contain;
-        display:block;
-      }
+  img{
+    height:min(80vh, 450px);
+    width:auto;
+    object-fit:contain;
+    display:block;
+  }
 
-      .gallery::-webkit-scrollbar{
-        display:none;
-      }
+  .gallery::-webkit-scrollbar{
+    display:none;
+  }
 
-      figure{
-        flex:0 0 auto;
-        grid-template-rows:auto auto;
-        row-gap:10px;
-      }
+  figure{
+    flex:0 0 auto;
+    grid-template-rows:auto auto;
+    row-gap:10px;
+  }
 
-      .frame{
-        height:auto;
-        justify-content:flex-start;
-      }
+  .frame{
+    height:auto;
+    justify-content:flex-start;
+  }
 
-      figcaption{
-        width:min(240px, 75vw);
-        justify-self:end;
-        text-align:right;
-      }
+  figcaption{
+    width:min(240px, 75vw);
+    justify-self:end;
+    text-align:right;
+  }
 
-      .overlay{
-        position:fixed;
-        inset:0;
-        overflow:hidden;
-      }
+  .overlay{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+  }
 
-      .overlay-inner{
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        padding:20px var(--pad) 100px;
-        overflow-y:auto;
-        -webkit-overflow-scrolling:touch;
-      }
+  .overlay-inner{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px var(--pad) 100px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+  }
 
-      .overlay-close{
-        top:20px;
-        right:var(--pad);
-      }
+  .overlay-close{
+    top:20px;
+    right:var(--pad);
+  }
 
-      .cv-top{
-        grid-template-columns:1fr;
-        row-gap:10px;
-        padding-bottom:12px;
-      }
+  .cv-top{
+    grid-template-columns:1fr;
+    row-gap:6px;
+    padding-bottom:6px;
+    margin-bottom:20px;
+  }
 
-      .cv-top .cv-contact{
-        margin-top:15px;
-      }
+  .cv-top .cv-contact{
+    margin-top:8px;
+  }
 
-      .cv-grid{
-        grid-template-columns:1fr;
-        row-gap:22px;
-        column-gap:0;
-      }
-    }
+  .cv-grid{
+    grid-template-columns:1fr;
+    row-gap:22px;
+    column-gap:0;
+  }
+}
 
     @media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse){
       .gallery{
