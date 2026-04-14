@@ -595,13 +595,9 @@ items:
     alt: Commercial Image 83
     caption: For Studio RON, 2022.
     category: Commercial
-  - image: /images/uploads/komkommer-zoe-83-1-.jpg
-    alt: Commercial Image 83-1
-    caption: For Studio RON, 2022.
-    category: Commercial
   - image: /images/uploads/komkommer-zoe-86.jpg
     alt: Commercial Image 86
-    caption: For Gino Pecqueux, 2021.
+    caption: For Sudio RON, 2022.
     category: Commercial
   - image: /images/uploads/komkommer-zoe-94.jpg
     alt: Commercial Image 94
@@ -629,7 +625,7 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer-zoe-101.jpg
     alt: Commercial Image 101
-    caption: For Hanne Cornette, 2021.
+    caption: For Gino Pecqueux, 2021.
     category: Commercial
   - image: /images/uploads/komkommer-zoe-103.jpg
     alt: Commercial Image 103
@@ -645,11 +641,11 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer-zoe-106.jpg
     alt: Commercial Image 106
-    caption: For Atelier Joris, 2025.
+    caption: For Hanne Cornette, 2021.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-1-2.jpg
     alt: Commercial Image 107
-    caption: For Objects & Sounds, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-1-3.jpg
     alt: Commercial Image 108
@@ -657,11 +653,11 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-1.jpg
     alt: Commercial Image 109
-    caption: For Atelier Joris, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-2-2.jpg
     alt: Commercial Image 110
-    caption: For Objects & Sounds, 2026.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-2-3.jpg
     alt: Commercial Image 111
@@ -669,7 +665,7 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-2-4.jpg
     alt: Commercial Image 112
-    caption: For Objects & Sounds, 2025.
+    caption: For Objects & Sounds, 2026.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-2.jpg
     alt: Commercial Image 113
@@ -677,27 +673,27 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-3.jpg
     alt: Commercial Image 114
-    caption: For Objects & Sounds, 2026.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-4-2.jpg
     alt: Commercial Image 115
-    caption: For Objects & Sounds, 2025.
+    caption: For Objects & Sounds, 2026.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-4.jpg
     alt: Commercial Image 116
-    caption: For Objects & Sounds, 2026.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-5-2.jpg
     alt: Commercial Image 117
-    caption: For Objects & Sounds, 2025.
+    caption: For Objects & Sounds, 2026.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-5.jpg
     alt: Commercial Image 118
-    caption: For Atelier Joris, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-6.jpg
     alt: Commercial Image 119
-    caption: For Objects & Sounds, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-7-kopie.jpg
     alt: Commercial Image 120
@@ -713,11 +709,11 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-9.jpg
     alt: Commercial Image 123
-    caption: For Atelier Joris, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-10-2.jpg
     alt: Commercial Image 124
-    caption: For Objects & Sounds, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-10.jpg
     alt: Commercial Image 125
@@ -725,23 +721,23 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-11.jpg
     alt: Commercial Image 126
-    caption: For Atelier Joris, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-12-2.jpg
     alt: Commercial Image 127
-    caption: For Objects & Sounds, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-12.jpg
     alt: Commercial Image 128
-    caption: For Viktoria von Malottki, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-13-2.jpg
     alt: Commercial Image 129
-    caption: For Atelier Joris, 2025.
+    caption: For Viktoria von Malottki, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-13.jpg
     alt: Commercial Image 130
-    caption: For Viktoria von Malottki, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-14.jpg
     alt: Commercial Image 131
@@ -749,15 +745,15 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-15.jpg
     alt: Commercial Image 132
-    caption: For Objects & Sounds, 2026.
+    caption: For Viktoria von Malottki, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-17.jpg
     alt: Commercial Image 133
-    caption: For Objects & Sounds, 2025.
+    caption: For Objects & Sounds, 2026.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-18-2.jpg
     alt: Commercial Image 134
-    caption: For Viktoria von Malottki, 2025.
+    caption: For Objects & Sounds, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-18.jpg
     alt: Commercial Image 135
@@ -765,11 +761,11 @@ items:
     category: Commercial
   - image: /images/uploads/komkommer_zoe-19.jpg
     alt: Commercial Image 136
-    caption: For Atelier Joris, 2025.
+    caption: For Viktoria von Malottki, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-23.jpg
     alt: Commercial Image 137
-    caption: For Viktoria von Malottki, 2025.
+    caption: For Atelier Joris, 2025.
     category: Commercial
   - image: /images/uploads/komkommer_zoe-25.jpg
     alt: Commercial Image 138
