@@ -72,20 +72,29 @@
     }
 
     /* DESKTOP GALLERY: CLICK ONLY */
-    .gallery{
-      height:auto;
-      display:flex;
-      flex-direction:row;
-      gap:var(--gap);
+.gallery{
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  gap:var(--gap);
 
-      overflow:hidden;
-      padding:0 0 var(--gap) 0;
+  overflow:hidden;
 
-      align-items:flex-start;
-      user-select:none;
-      cursor:pointer;
-      scrollbar-width:none;
-    }
+  /* 👇 ADD THIS */
+  padding-left: var(--pad);
+  margin-left: 0;
+
+  padding-bottom: var(--gap);
+
+  align-items:flex-start;
+  user-select:none;
+  cursor:pointer;
+  scrollbar-width:none;
+}
+
+    .gallery.is-scrolled{
+  margin-left: calc(-1 * var(--pad));
+}
 
     .gallery::-webkit-scrollbar{ width:0; height:0; }
 
@@ -406,6 +415,16 @@ figcaption{
 <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
 
 <script>
+  const galleryEl = document.getElementById("gallery");
+
+galleryEl.addEventListener("scroll", () => {
+  if (galleryEl.scrollLeft > 0) {
+    galleryEl.classList.add("is-scrolled");
+  } else {
+    galleryEl.classList.remove("is-scrolled");
+  }
+});
+  
   async function loadGallery() {
     const res = await fetch('/content/gallery.yml');
     const text = await res.text();
