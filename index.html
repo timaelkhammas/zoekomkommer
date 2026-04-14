@@ -4,23 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zoé Komkommer</title>
-  
+
   <style>
- :root{
-  --bg:#f8f7ec;
-  --ink:#111;
-  --muted:#333;
-  --gap:12px;
-  --pad:35px;
-  --capW:260px;
-  --capGap:8px;
-  --galleryTop:var(--gap);
-  --imgH:min(500px, calc(100vh - 120px));
-  --cvGap:90px;
-  --cvLeft:minmax(240px, 1fr);
-  --cvRight:2fr;
-  --ipadTop: 20px;
-}
+    :root{
+      --bg:#f8f7ec;
+      --ink:#111;
+      --muted:#333;
+      --gap:12px;
+      --pad:35px;
+      --capW:260px;
+      --capGap:8px;
+      --galleryTop:var(--gap);
+      --imgH:min(500px, calc(100vh - 120px));
+      --cvGap:90px;
+      --cvLeft:minmax(240px, 1fr);
+      --cvRight:2fr;
+      --ipadTop:20px;
+    }
 
     *{ box-sizing:border-box; }
     html,body{ height:100%; }
@@ -32,7 +32,7 @@
       font-family:"Times New Roman", Times, serif;
     }
 
-    /* HEADER (gallery page) */
+    /* HEADER */
     header{
       display:flex;
       justify-content:space-between;
@@ -48,7 +48,9 @@
       white-space:nowrap;
       user-select:none;
     }
+
     .site-title.is-link{ cursor:pointer; }
+
     .site-title.is-link:focus-visible{
       outline:1px solid rgba(0,0,0,.35);
       outline-offset:3px;
@@ -60,81 +62,83 @@
       line-height:1.2;
       text-align:right;
     }
+
     .quote span{ font-size:14px; }
 
     /* GALLERY WRAP */
     .gallery-wrap{
-      height: calc(100vh - 86px);
-      padding: 0 var(--pad) var(--bottomSpace);
-      display: flex;
-      align-items: flex-end; /* ← push gallery to bottom */
-      transform: translateY(40px);
+      height:calc(100vh - 86px);
+      padding:0 var(--pad) var(--bottomSpace);
+      display:flex;
+      align-items:flex-end;
+      transform:translateY(40px);
     }
 
-    /* DESKTOP GALLERY: CLICK ONLY */
-.gallery{
-  height:auto;
-  display:flex;
-  flex-direction:row;
-  gap:var(--gap);
+    /* DESKTOP GALLERY */
+    .gallery{
+      height:auto;
+      display:flex;
+      flex-direction:row;
+      gap:var(--gap);
+      overflow:hidden;
+      padding:0 0 var(--gap) 0;
+      align-items:flex-start;
+      user-select:none;
+      cursor:pointer;
+      scrollbar-width:none;
+    }
 
-  overflow:hidden;
-  padding:0 0 var(--gap) 0;
+    .gallery::-webkit-scrollbar{
+      width:0;
+      height:0;
+    }
 
-  align-items:flex-start;
-  user-select:none;
-  cursor:pointer;
-  scrollbar-width:none;
+    /* initial left offset only on first image */
+    .gallery figure:first-child{
+      transform:translateX(var(--pad));
+      transition:transform 320ms ease-out;
+    }
 
-  padding-left: var(--pad);
-  transform: translateX(0);
-  transition: transform 220ms ease;
-}
-
-.gallery.is-scrolled{
-  transform: translateX(calc(-1 * var(--pad)));
-}
-
-    .gallery::-webkit-scrollbar{ width:0; height:0; }
-
-
+    .gallery.is-scrolled figure:first-child{
+      transform:translateX(0);
+    }
 
     figure{
-  margin:0;
-  flex:0 0 auto;
-  display:grid;
-  grid-template-rows: var(--imgH) auto;
-  row-gap: var(--capGap);
-  align-items:start;
-  contain: layout paint;
-}
+      margin:0;
+      flex:0 0 auto;
+      display:grid;
+      grid-template-rows:var(--imgH) auto;
+      row-gap:var(--capGap);
+      align-items:start;
+      contain:layout paint;
+    }
 
-.frame{
-  height:var(--imgH);
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  contain: layout paint;
-}
+    .frame{
+      height:var(--imgH);
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      contain:layout paint;
+    }
 
-img{
-  height:100%;
-  width:auto;
-  object-fit:contain;
-  display:block;
-  transform: translateZ(0);
-}
+    img{
+      height:100%;
+      width:auto;
+      object-fit:contain;
+      display:block;
+      transform:translateZ(0);
+    }
 
-figcaption{
-  width:var(--capW);
-  justify-self:end;
-  text-align:right;
-  font-size:11px;
-  line-height:1.2;
-  color:var(--muted);
-}
+    figcaption{
+      width:var(--capW);
+      justify-self:end;
+      text-align:right;
+      font-size:11px;
+      line-height:1.2;
+      color:var(--muted);
+    }
 
-    /* ====== CV OVERLAY ====== */
+    /* OVERLAY */
     .overlay{
       position:fixed;
       inset:0;
@@ -143,51 +147,52 @@ figcaption{
       display:none;
       z-index:9999;
     }
+
     .overlay.is-open{ display:block; }
 
     .overlay-inner{
-  position:relative;
-  height:100vh;
-  padding:var(--gap) var(--pad) var(--pad);
-  overflow:auto;
-  font-size:14px;
-  line-height:1.25;
-}
+      position:relative;
+      height:100vh;
+      padding:var(--gap) var(--pad) var(--pad);
+      overflow:auto;
+      font-size:14px;
+      line-height:1.25;
+    }
 
     .cv-top{
       display:grid;
-      grid-template-columns: var(--cvLeft) var(--cvRight);
-      column-gap: var(--cvGap);
+      grid-template-columns:var(--cvLeft) var(--cvRight);
+      column-gap:var(--cvGap);
       align-items:start;
       margin-bottom:38px;
     }
 
     .overlay-close{
-  position:absolute;
-  top:10px;
-  right:var(--pad);
-  background:none;
-  border:0;
-  font-family:inherit;
-  font-size:14px;
-  line-height:1.2;
-  padding:0;
-  cursor:pointer;
-  color:var(--ink);
-}
+      position:absolute;
+      top:10px;
+      right:var(--pad);
+      background:none;
+      border:0;
+      font-family:inherit;
+      font-size:14px;
+      line-height:1.2;
+      padding:0;
+      cursor:pointer;
+      color:var(--ink);
+    }
 
     .overlay-close:hover{ text-decoration:underline; }
+
     .overlay-close:focus-visible{
       outline:1px solid rgba(0,0,0,.35);
       outline-offset:3px;
     }
 
-    /* CV GRID */
     .cv-grid{
       display:grid;
-      grid-template-columns: var(--cvLeft) var(--cvRight);
-      column-gap: var(--cvGap);
-      row-gap: 38px;
+      grid-template-columns:var(--cvLeft) var(--cvRight);
+      column-gap:var(--cvGap);
+      row-gap:38px;
     }
 
     .cv-label{
@@ -199,7 +204,12 @@ figcaption{
     .cv-block em{ font-style:italic; }
     .cv-block a{ color:inherit; text-decoration:underline; }
 
-    .cv-list{ margin:0; padding:0; list-style:none; }
+    .cv-list{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
     .cv-list li{ margin:0 0 3px 0; }
 
     .cv-contact{
@@ -208,15 +218,15 @@ figcaption{
     }
 
     .cv-contact .contact-label{
-      text-decoration: none;
+      text-decoration:none;
     }
 
     .cv-contact a{
-      text-decoration: none;
+      text-decoration:none;
     }
 
     .cv-contact a:hover{
-      font-style: italic;
+      font-style:italic;
     }
 
     /* DESKTOP */
@@ -224,157 +234,161 @@ figcaption{
       body{ overflow:hidden; }
     }
 
-/* MOBILE */
-@media (max-width: 900px){
+    /* MOBILE */
+    @media (max-width: 900px){
+      :root{
+        --pad:16px;
+      }
 
-  :root{
-    --pad: 16px;   /* or try 12px if you want it tighter */
-  }
+      header{
+        padding:20px var(--pad) 10px;
+        flex-direction:column;
+        align-items:flex-start;
+      }
 
-header{
-  padding:20px var(--pad) 10px;
-  flex-direction:column;
-  align-items:flex-start;
-}
+      .quote{
+        display:none;
+        text-align:left;
+        max-width:60ch;
+      }
 
-.quote{
-  display:none;
-  text-align:left;
-  max-width:60ch;
-}
+      body{
+        overflow:auto;
+      }
 
-body{
-  overflow:auto;
-}
+      .gallery-wrap{
+        height:auto;
+        padding:90px 0 0 0;
+        overflow-x:auto;
+        overflow-y:visible;
+        -ms-overflow-style:none;
+        scrollbar-width:none;
+        transform:none;
+      }
 
-.gallery-wrap{
-  height:auto;
-  padding:90px 0 0 0;
-  overflow-x:auto;
-  overflow-y:visible;
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
-  transform: none;
-}
+      .gallery-wrap::-webkit-scrollbar{
+        display:none;
+      }
 
-.gallery-wrap::-webkit-scrollbar{
-  display: none;             /* Chrome/Safari */
-}
+      .gallery{
+        height:auto;
+        flex-direction:row;
+        overflow-x:visible;
+        overflow-y:visible;
+        padding:20px 20vw 0 0;
+        margin-left:var(--pad);
+        cursor:default;
+        user-select:auto;
+        align-items:flex-start;
+        scrollbar-width:none;
+      }
 
-.gallery{
-  height:auto;
-  flex-direction:row;
-  overflow-x:visible;
-  overflow-y:visible;
-  padding:20px 20vw 0 0;
-  margin-left:var(--pad);
-  cursor:default;
-  user-select:auto;
-  align-items:flex-start;
-  scrollbar-width:none;
-}
+      .gallery figure:first-child{
+        transform:none;
+        transition:none;
+      }
 
-img{
-  height:min(80vh, 450px);
-  width:auto;
-  object-fit:contain;
-  display:block;
-}
+      img{
+        height:min(80vh, 450px);
+        width:auto;
+        object-fit:contain;
+        display:block;
+      }
 
-.gallery::-webkit-scrollbar{
-  display:none;
-}
+      .gallery::-webkit-scrollbar{
+        display:none;
+      }
 
-figure{
-  flex:0 0 auto;
-  grid-template-rows:auto auto;
-  row-gap:10px;
-}
+      figure{
+        flex:0 0 auto;
+        grid-template-rows:auto auto;
+        row-gap:10px;
+      }
 
-.frame{
-  height:auto;
-  justify-content:flex-start;
-}
+      .frame{
+        height:auto;
+        justify-content:flex-start;
+      }
 
-figcaption{
-  width:min(240px, 75vw);
-  justify-self:end;
-  text-align:right;
-}
+      figcaption{
+        width:min(240px, 75vw);
+        justify-self:end;
+        text-align:right;
+      }
 
-.overlay{
-  position:fixed;
-  inset:0;
-  overflow:hidden;
-}
+      .overlay{
+        position:fixed;
+        inset:0;
+        overflow:hidden;
+      }
 
-.overlay-inner{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:20px var(--pad) 100px;
-  overflow-y:auto;
-  -webkit-overflow-scrolling:touch;
-}
+      .overlay-inner{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        padding:20px var(--pad) 100px;
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
+      }
 
-.overlay-close{
-  top:20px;
-  right:var(--pad);
-}
+      .overlay-close{
+        top:20px;
+        right:var(--pad);
+      }
 
-.cv-top{
-  grid-template-columns:1fr;
-  row-gap:10px;
-  padding-bottom:12px;
-}
+      .cv-top{
+        grid-template-columns:1fr;
+        row-gap:10px;
+        padding-bottom:12px;
+      }
 
-.cv-top .cv-contact{
-  margin-top:15px;
-}
+      .cv-top .cv-contact{
+        margin-top:15px;
+      }
 
-.cv-grid{
-  grid-template-columns:1fr;
-  row-gap:22px;
-  column-gap:0;
-}
-}
+      .cv-grid{
+        grid-template-columns:1fr;
+        row-gap:22px;
+        column-gap:0;
+      }
+    }
 
-@media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse){
-  .gallery{
-    -webkit-overflow-scrolling: touch;
-    overflow-x:auto;
-  }
+    @media (min-width: 768px) and (max-width: 1366px) and (hover: none) and (pointer: coarse){
+      .gallery{
+        -webkit-overflow-scrolling:touch;
+        overflow-x:auto;
+      }
 
-  header{
-    padding-top: var(--ipadTop);
-  }
+      header{
+        padding-top:var(--ipadTop);
+      }
 
-  .gallery-wrap{
-    padding-top: 80px;
-    transform: translateY(0);
-    align-items: flex-start;
-  }
+      .gallery-wrap{
+        padding-top:80px;
+        transform:translateY(0);
+        align-items:flex-start;
+      }
 
-  .overlay-inner{
-    position:relative;
-    min-height:100vh;
-    min-height:100dvh;
-    padding: var(--ipadTop) var(--pad) 120px;
-    overflow:auto;
-    font-size:14px;
-    line-height:1.25;
-  }
+      .overlay-inner{
+        position:relative;
+        min-height:100vh;
+        min-height:100dvh;
+        padding:var(--ipadTop) var(--pad) 120px;
+        overflow:auto;
+        font-size:14px;
+        line-height:1.25;
+      }
 
-  .cv-top{
-    margin-bottom:38px;
-  }
+      .cv-top{
+        margin-bottom:38px;
+      }
 
-  .overlay-close{
-    top: var(--ipadTop);
-  }
-}
+      .overlay-close{
+        top:var(--ipadTop);
+      }
+    }
   </style>
 </head>
 
@@ -385,7 +399,7 @@ figcaption{
     </div>
 
     <div class="quote">
-      “Van de weerschijn, zoals je ook niet direct in de zon kunt kijken.”<br/>
+      “Van de weerschijn, zoals je ook niet direct in de zon kunt kijken.”<br />
       <span>(Bregje Hofstede, <i>Drift</i>, p. 26, 2018)</span>
     </div>
   </header>
@@ -395,234 +409,236 @@ figcaption{
   </main>
 
   <aside id="cvOverlay" class="overlay" aria-hidden="true">
-  <div class="overlay-inner">
+    <div class="overlay-inner">
+      <button class="overlay-close" id="closeCv" type="button" aria-label="Close">close</button>
 
-    <button class="overlay-close" id="closeCv" type="button" aria-label="Close">close</button>
+      <div class="cv-top">
+        <div class="site-title" id="cvName"></div>
 
-    <div class="cv-top">
-      <div class="site-title" id="cvName"></div>
-
-      <div class="cv-block cv-contact">
-        <ul class="cv-list" id="cvContact"></ul>
+        <div class="cv-block cv-contact">
+          <ul class="cv-list" id="cvContact"></ul>
+        </div>
       </div>
+
+      <div class="cv-grid" id="cvGrid"></div>
     </div>
+  </aside>
 
-    <div class="cv-grid" id="cvGrid"></div>
-  </div>
-</aside>
+  <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
 
-<script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script>
+    async function loadGallery() {
+      const res = await fetch('/content/gallery.yml');
+      const text = await res.text();
+      const data = jsyaml.load(text);
 
-<script>
-  const galleryEl = document.getElementById("gallery");
+      const items = data.items || [];
+      const gallery = document.getElementById("gallery");
+      gallery.innerHTML = "";
 
-galleryEl.addEventListener("scroll", () => {
-  if (galleryEl.scrollLeft > 0) {
-    galleryEl.classList.add("is-scrolled");
-  } else {
-    galleryEl.classList.remove("is-scrolled");
-  }
-});
-  
-  async function loadGallery() {
-    const res = await fetch('/content/gallery.yml');
-    const text = await res.text();
-    const data = jsyaml.load(text);
-
-    const items = data.items || [];
-    const gallery = document.getElementById("gallery");
-    gallery.innerHTML = "";
-
-    function shuffle(arr) {
-      const a = arr.slice();
-      for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
+      function shuffle(arr) {
+        const a = arr.slice();
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
       }
-      return a;
-    }
 
-    const shuffled = shuffle(items);
+      const shuffled = shuffle(items);
 
-    shuffled.forEach(({ image, alt, caption }, i) => {
-      const fig = document.createElement("figure");
-      const frame = document.createElement("div");
-      frame.className = "frame";
+      shuffled.forEach(({ image, alt, caption }, i) => {
+        const fig = document.createElement("figure");
+        const frame = document.createElement("div");
+        frame.className = "frame";
 
-      const img = document.createElement("img");
-      img.loading = i < 2 ? "eager" : "lazy";
-      img.decoding = "async";
-      img.fetchPriority = i < 2 ? "high" : "low";
-      img.src = image;
-      img.alt = alt || "";
+        const img = document.createElement("img");
+        img.loading = i < 2 ? "eager" : "lazy";
+        img.decoding = "async";
+        img.fetchPriority = i < 2 ? "high" : "low";
+        img.src = image;
+        img.alt = alt || "";
 
-      const cap = document.createElement("figcaption");
-      cap.innerHTML = caption || "";
+        const cap = document.createElement("figcaption");
+        cap.innerHTML = caption || "";
 
-      frame.appendChild(img);
-      fig.appendChild(frame);
-      fig.appendChild(cap);
-      gallery.appendChild(fig);
-    });
-  }
-
-  async function loadCv() {
-    const res = await fetch('/content/cv.yml');
-    const text = await res.text();
-    const data = jsyaml.load(text);
-
-    document.getElementById('cvName').textContent = data.name || '';
-
-    const contact = document.getElementById('cvContact');
-contact.innerHTML = `
-  <li>
-    <span class="contact-label">email</span>: 
-    <a href="mailto:${data.contact?.email || ''}">
-      ${data.contact?.email || ''}
-    </a>
-  </li>
-
-  <li>
-    <span class="contact-label">phone</span>: 
-    <a href="tel:${(data.contact?.phone || '').replace(/\s+/g, '')}">
-      ${data.contact?.phone || ''}
-    </a>
-  </li>
-
-  <li>
-    <span class="contact-label">insta</span>: 
-    <a href="https://instagram.com/${(data.contact?.instagram || '').replace('@','')}" target="_blank" rel="noopener noreferrer">
-      ${data.contact?.instagram || ''}
-    </a>
-  </li>
-`;
-
-    const grid = document.getElementById('cvGrid');
-    grid.innerHTML = '';
-
-    (data.sections || []).forEach(section => {
-      const label = document.createElement('div');
-      label.className = 'cv-label';
-      label.textContent = section.title || '';
-
-      const block = document.createElement('div');
-      block.className = 'cv-block';
-
-      const ul = document.createElement('ul');
-      ul.className = 'cv-list';
-
-      (section.items || []).forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = item;
-        ul.appendChild(li);
+        frame.appendChild(img);
+        fig.appendChild(frame);
+        fig.appendChild(cap);
+        gallery.appendChild(fig);
       });
 
-      block.appendChild(ul);
-      grid.appendChild(label);
-      grid.appendChild(block);
-    });
-  }
-
-  function enableClickScroll(el) {
-    const mq = window.matchMedia("(min-width: 901px) and (hover: hover)");
-    const step = () => Math.round(window.innerWidth * 0.9);
-
-    el.addEventListener("wheel", (e) => {
-      if (!mq.matches) return;
-
-      const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-      el.scrollLeft += delta;
-      e.preventDefault();
-    }, { passive: false });
-
-    let rafId = null;
-
-    function animateScrollTo(targetLeft, duration = 240) {
-      if (rafId) cancelAnimationFrame(rafId);
-      
-      const startLeft = el.scrollLeft;
-      const maxLeft = el.scrollWidth - el.clientWidth;
-      const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
-      const delta = clampedTarget - startLeft;
-
-      if (Math.abs(delta) < 1) return;
-
-      const start = performance.now();
-      const ease = (t) => 1 - Math.pow(1 - t, 3);
-
-      function tick(now) {
-        const t = Math.min(1, (now - start) / duration);
-        el.scrollLeft = startLeft + delta * ease(t);
-        if (t < 1) {
-          rafId = requestAnimationFrame(tick);
-        } else {
-          rafId = null;
-        }
-      }
-
-      rafId = requestAnimationFrame(tick);
+      gallery.classList.toggle("is-scrolled", gallery.scrollLeft > 2);
     }
 
-    el.addEventListener("click", (e) => {
-      if (!mq.matches) return;
-      if (document.getElementById("cvOverlay").classList.contains("is-open")) return;
+    async function loadCv() {
+      const res = await fetch('/content/cv.yml');
+      const text = await res.text();
+      const data = jsyaml.load(text);
 
-      const rect = el.getBoundingClientRect();
-      const forward = (e.clientX - rect.left) > rect.width / 2;
+      document.getElementById('cvName').textContent = data.name || '';
 
-      const target = el.scrollLeft + (forward ? step() : -step());
-      animateScrollTo(target, 240);
-    });
-  }
+      const contact = document.getElementById('cvContact');
+      contact.innerHTML = `
+        <li>
+          <span class="contact-label">email</span>:
+          <a href="mailto:${data.contact?.email || ''}">
+            ${data.contact?.email || ''}
+          </a>
+        </li>
 
-  const openCv = document.getElementById("openCv");
-  const overlay = document.getElementById("cvOverlay");
-  const closeCv = document.getElementById("closeCv");
+        <li>
+          <span class="contact-label">phone</span>:
+          <a href="tel:${(data.contact?.phone || '').replace(/\s+/g, '')}">
+            ${data.contact?.phone || ''}
+          </a>
+        </li>
 
-  function setOverlay(open) {
-    overlay.classList.toggle("is-open", open);
-    overlay.setAttribute("aria-hidden", open ? "false" : "true");
-    openCv.setAttribute("aria-expanded", open ? "true" : "false");
+        <li>
+          <span class="contact-label">insta</span>:
+          <a href="https://instagram.com/${(data.contact?.instagram || '').replace('@','')}" target="_blank" rel="noopener noreferrer">
+            ${data.contact?.instagram || ''}
+          </a>
+        </li>
+      `;
 
-    document.body.style.overflow = open ? "hidden" : "";
-    if (open) {
-      closeCv.focus();
-    } else {
-      openCv.focus();
-    }
-  }
+      const grid = document.getElementById('cvGrid');
+      grid.innerHTML = '';
 
-  openCv.addEventListener("click", () => setOverlay(true));
-  openCv.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      setOverlay(true);
-    }
-  });
+      (data.sections || []).forEach(section => {
+        const label = document.createElement('div');
+        label.className = 'cv-label';
+        label.textContent = section.title || '';
 
-  closeCv.addEventListener("click", () => setOverlay(false));
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && overlay.classList.contains("is-open")) {
-      setOverlay(false);
-    }
-  });
+        const block = document.createElement('div');
+        block.className = 'cv-block';
 
-  loadGallery();
-  loadCv();
-  enableClickScroll(document.getElementById("gallery"));
-</script>
+        const ul = document.createElement('ul');
+        ul.className = 'cv-list';
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+        (section.items || []).forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = item;
+          ul.appendChild(li);
         });
+
+        block.appendChild(ul);
+        grid.appendChild(label);
+        grid.appendChild(block);
+      });
+    }
+
+    function enableClickScroll(el) {
+      const mq = window.matchMedia("(min-width: 901px) and (hover: hover)");
+      const step = () => Math.round(window.innerWidth * 0.9);
+
+      el.addEventListener("wheel", (e) => {
+        if (!mq.matches) return;
+
+        const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+        el.scrollLeft += delta;
+        e.preventDefault();
+      }, { passive: false });
+
+      el.addEventListener("scroll", () => {
+        if (el.scrollLeft > 2) {
+          el.classList.add("is-scrolled");
+        } else {
+          el.classList.remove("is-scrolled");
+        }
+      });
+
+      let rafId = null;
+
+      function animateScrollTo(targetLeft, duration = 240) {
+        if (rafId) cancelAnimationFrame(rafId);
+
+        const startLeft = el.scrollLeft;
+        const maxLeft = el.scrollWidth - el.clientWidth;
+        const clampedTarget = Math.max(0, Math.min(targetLeft, maxLeft));
+        const delta = clampedTarget - startLeft;
+
+        if (Math.abs(delta) < 1) return;
+
+        const start = performance.now();
+        const ease = (t) => 1 - Math.pow(1 - t, 3);
+
+        function tick(now) {
+          const t = Math.min(1, (now - start) / duration);
+          el.scrollLeft = startLeft + delta * ease(t);
+          if (t < 1) {
+            rafId = requestAnimationFrame(tick);
+          } else {
+            rafId = null;
+          }
+        }
+
+        rafId = requestAnimationFrame(tick);
+      }
+
+      el.addEventListener("click", (e) => {
+        if (!mq.matches) return;
+        if (document.getElementById("cvOverlay").classList.contains("is-open")) return;
+
+        const rect = el.getBoundingClientRect();
+        const forward = (e.clientX - rect.left) > rect.width / 2;
+
+        const target = el.scrollLeft + (forward ? step() : -step());
+        animateScrollTo(target, 240);
+      });
+    }
+
+    const openCv = document.getElementById("openCv");
+    const overlay = document.getElementById("cvOverlay");
+    const closeCv = document.getElementById("closeCv");
+
+    function setOverlay(open) {
+      overlay.classList.toggle("is-open", open);
+      overlay.setAttribute("aria-hidden", open ? "false" : "true");
+      openCv.setAttribute("aria-expanded", open ? "true" : "false");
+
+      document.body.style.overflow = open ? "hidden" : "";
+
+      if (open) {
+        closeCv.focus();
+      } else {
+        openCv.focus();
+      }
+    }
+
+    openCv.addEventListener("click", () => setOverlay(true));
+
+    openCv.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        setOverlay(true);
       }
     });
-  }
-</script>
+
+    closeCv.addEventListener("click", () => setOverlay(false));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && overlay.classList.contains("is-open")) {
+        setOverlay(false);
+      }
+    });
+
+    loadGallery();
+    loadCv();
+    enableClickScroll(document.getElementById("gallery"));
+  </script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
