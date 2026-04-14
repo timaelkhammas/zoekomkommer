@@ -79,21 +79,20 @@
   gap:var(--gap);
 
   overflow:hidden;
-
-  /* 👇 ADD THIS */
-  padding-left: var(--pad);
-  margin-left: 0;
-
-  padding-bottom: var(--gap);
+  padding:0 0 var(--gap) 0;
 
   align-items:flex-start;
   user-select:none;
   cursor:pointer;
   scrollbar-width:none;
+
+  padding-left: var(--pad);
+  transform: translateX(0);
+  transition: transform 220ms ease;
 }
 
-    .gallery.is-scrolled{
-  margin-left: calc(-1 * var(--pad));
+.gallery.is-scrolled{
+  transform: translateX(calc(-1 * var(--pad)));
 }
 
     .gallery::-webkit-scrollbar{ width:0; height:0; }
