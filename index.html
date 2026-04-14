@@ -84,6 +84,12 @@
   cursor:pointer;
   scrollbar-width:none;
 }
+
+.lead-spacer{
+  flex: 0 0 calc(var(--pad) + var(--gap));
+  height: 1px;
+}
+    
     .gallery::-webkit-scrollbar{ width:0; height:0; }
 
 
@@ -403,6 +409,14 @@ figcaption{
 <script src="https://unpkg.com/js-yaml@4/dist/js-yaml.min.js"></script>
 
 <script>
+  gallery.innerHTML = "";
+
+if (window.innerWidth > 900) {
+  const spacer = document.createElement("div");
+  spacer.className = "lead-spacer";
+  gallery.appendChild(spacer);
+}
+  
   async function loadGallery() {
     const res = await fetch('/content/gallery.yml');
     const text = await res.text();
