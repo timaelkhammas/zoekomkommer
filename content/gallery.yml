@@ -799,6 +799,10 @@ items:
     alt: Mobile Image 7
     caption: Personal archive, 2024.
     category: Mobile
+  - alt: Mobile Image 15
+    category: Mobile
+    image: /images/uploads/img_8926.jpeg
+    caption: Personal archive, 2023.
   - image: /images/uploads/img_3994.jpeg
     alt: Mobile Image 8
     caption: Personal archive, 2024.
@@ -827,7 +831,6 @@ items:
     alt: Mobile Image 14
     caption: Personal archive, 2022.
     category: Mobile
-  - alt: Mobile Image 15
-    category: Mobile
-    image: /images/uploads/img_8926.jpeg
-    caption: Personal archive, 2023.
+  - image: /images/uploads/komkommer_zoe-30.jpg
+    category: Commercial
+    caption: For Viktoria von Malottki, 2025.
