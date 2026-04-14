@@ -851,3 +851,15 @@ items:
     category: Mobile
     caption: Personal archive, 2023.
     image: /images/uploads/img_8798.jpeg
+  - alt: Mobile Image 19
+    category: Mobile
+    image: /images/uploads/img_8385.jpeg
+    caption: Personal archive, 2023.
+  - image: /images/uploads/img_8809.jpeg
+    category: Mobile
+    alt: Mobile Image 20
+    caption: Personal archive, 2023.
+  - image: /images/uploads/img_8831.jpeg
+    category: Mobile
+    alt: Mobile Image 21
+    caption: Personal archive, 2023.
