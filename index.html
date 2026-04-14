@@ -69,7 +69,8 @@
       display: flex;
       align-items: flex-end; /* ← push gallery to bottom */
       transform: translateY(40px);
-      padding-left: var(--pad);
+      padding-left: calc(var(--pad) + var(--gap));
+      padding-right: var(--pad);
     }
 
     /* DESKTOP GALLERY: CLICK ONLY */
