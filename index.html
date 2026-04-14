@@ -94,14 +94,14 @@
     }
 
     /* initial left offset only on first image */
-    .gallery figure:first-child{
-      transform:translateX(var(--pad));
-      transition:transform 320ms ease-out;
-    }
+.gallery figure:first-child{
+  margin-left: var(--pad);
+  transition: margin-left 320ms ease-out;
+}
 
-    .gallery.is-scrolled figure:first-child{
-      transform:translateX(0);
-    }
+.gallery.is-scrolled figure:first-child{
+  margin-left: 0;
+}
 
     figure{
       margin:0;
