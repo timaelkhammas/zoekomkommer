@@ -200,7 +200,18 @@
       letter-spacing:.02em;
     }
 
-    .cv-block{ max-width:78ch; }
+    .cv-block{
+  max-width: 74ch;
+}
+
+.cv-grid > .cv-block:first-of-type{
+  max-width: 70ch;
+}
+
+.cv-grid > .cv-block:first-of-type .cv-list li{
+  text-wrap: pretty;
+  line-height: 1.22;
+}
     .cv-block em{ font-style:italic; }
     .cv-block a{ color:inherit; text-decoration:underline; }
 
