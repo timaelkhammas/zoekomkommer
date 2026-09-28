@@ -19,11 +19,6 @@ items:
     caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
       print, 23,5 x 33 cm, 2023, Ghent, Belgium.
     category: DigitalImagesExpo
-  - image: /images/uploads/5.jpg
-    alt: Digital Image Expo 5
-    caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
-      print, 23,5 x 33 cm, 2023, Ghent, Belgium.
-    category: DigitalImagesExpo
   - image: /images/uploads/6.jpg
     alt: Digital Image Expo 6
     caption: Scenography of <i>Dat wij er waren</i>, booklet, 212 pages, colour
@@ -319,10 +314,6 @@ items:
     alt: Commercial Image 3
     caption: For Objects & Sounds, 2024.
     category: Commercial
-  - image: /images/uploads/komkommer-zoe-4.jpg
-    alt: Commercial Image 4
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
   - image: /images/uploads/komkommer-zoe-5.jpg
     alt: Commercial Image 5
     caption: For Objects & Sounds, 2024.
@@ -339,20 +330,8 @@ items:
     alt: Commercial Image 8
     caption: For Objects & Sounds, 2024.
     category: Commercial
-  - image: /images/uploads/komkommer-zoe-9.jpg
-    alt: Commercial Image 9
-    caption: For Objects & Sounds, <i>Sounds on Grief</i>, 2024.
-    category: Commercial
   - image: /images/uploads/komkommer-zoe-10.jpg
     alt: Commercial Image 10
-    caption: For Hanne Cornette, 2024.
-    category: Commercial
-  - image: /images/uploads/komkommer-zoe-11.jpg
-    alt: Commercial Image 11
-    caption: For Hanne Cornette, 2024.
-    category: Commercial
-  - image: /images/uploads/komkommer-zoe-12.jpg
-    alt: Commercial Image 12
     caption: For Hanne Cornette, 2024.
     category: Commercial
   - image: /images/uploads/komkommer-zoe-13.jpg
@@ -363,17 +342,9 @@ items:
     alt: Commercial Image 14
     caption: For Objects & Sounds, 2024.
     category: Commercial
-  - image: /images/uploads/komkommer-zoe-17.jpg
-    alt: Commercial Image 17
-    caption: For Objects & Sounds, 2024.
-    category: Commercial
   - image: /images/uploads/komkommer-zoe-19.jpg
     alt: Commercial Image 19
     caption: For Objects & Sounds, 2024.
-    category: Commercial
-  - image: /images/uploads/komkommer-zoe-20.jpg
-    alt: Commercial Image 20
-    caption: For Wolvis, 2024.
     category: Commercial
   - image: /images/uploads/komkommer-zoe-21.jpg
     alt: Commercial Image 21
@@ -599,10 +570,6 @@ items:
     alt: Commercial Image 104
     caption: For Hanne Cornette, 2021.
     category: Commercial
-  - image: /images/uploads/komkommer-zoe-105.jpg
-    alt: Commercial Image 105
-    caption: For Hanne Cornette, 2021.
-    category: Commercial
   - image: /images/uploads/komkommer-zoe-106.jpg
     alt: Commercial Image 106
     caption: For Hanne Cornette, 2021.
@@ -699,10 +666,6 @@ items:
     alt: Commercial Image 132
     caption: For Viktoria von Malottki, 2025.
     category: Commercial
-  - image: /images/uploads/komkommer_zoe-17.jpg
-    alt: Commercial Image 133
-    caption: For Objects & Sounds, 2026.
-    category: Commercial
   - image: /images/uploads/komkommer_zoe-18-2.jpg
     alt: Commercial Image 134
     caption: For Objects & Sounds, 2025.
@@ -723,10 +686,6 @@ items:
     alt: Commercial Image 138
     caption: For Viktoria von Malottki, 2025.
     category: Commercial
-  - image: /images/uploads/komkommer_zoe-30.jpg
-    category: Commercial
-    caption: For Viktoria von Malottki, 2025.
-    alt: Commercial Image 139
   - image: /images/uploads/1dad596c-3cdf-43bd-b1e1-55e7be729dae.jpg
     alt: Mobile Image 1
     caption: Personal archive, 2022.
@@ -802,10 +761,6 @@ items:
   - image: /images/uploads/img_1752.jpeg
     category: Mobile
     alt: Mobile Image 29
-    caption: Personal archive, 2024.
-  - image: /images/uploads/img_1745.jpeg
-    category: Mobile
-    alt: Mobile Image 30
     caption: Personal archive, 2024.
   - image: /images/uploads/img_1727.jpeg
     category: Mobile
